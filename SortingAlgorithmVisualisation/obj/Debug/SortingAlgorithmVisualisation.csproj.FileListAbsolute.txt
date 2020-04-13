@@ -1,0 +1,11 @@
+E:\coding\-- Projects --\SortingAlgorithmVisualisation\SortingAlgorithmVisualisation\bin\Debug\SortingAlgorithmVisualisation.exe.config
+E:\coding\-- Projects --\SortingAlgorithmVisualisation\SortingAlgorithmVisualisation\bin\Debug\SortingAlgorithmVisualisation.exe
+E:\coding\-- Projects --\SortingAlgorithmVisualisation\SortingAlgorithmVisualisation\bin\Debug\SortingAlgorithmVisualisation.pdb
+E:\coding\-- Projects --\SortingAlgorithmVisualisation\SortingAlgorithmVisualisation\obj\Debug\SortingAlgorithmVisualisation.csprojAssemblyReference.cache
+E:\coding\-- Projects --\SortingAlgorithmVisualisation\SortingAlgorithmVisualisation\obj\Debug\SortingAlgorithmVisualisation.MainMenuForm.resources
+E:\coding\-- Projects --\SortingAlgorithmVisualisation\SortingAlgorithmVisualisation\obj\Debug\SortingAlgorithmVisualisation.Properties.Resources.resources
+E:\coding\-- Projects --\SortingAlgorithmVisualisation\SortingAlgorithmVisualisation\obj\Debug\SortingAlgorithmVisualisation.csproj.GenerateResource.cache
+E:\coding\-- Projects --\SortingAlgorithmVisualisation\SortingAlgorithmVisualisation\obj\Debug\SortingAlgorithmVisualisation.csproj.CoreCompileInputs.cache
+E:\coding\-- Projects --\SortingAlgorithmVisualisation\SortingAlgorithmVisualisation\obj\Debug\SortingAlgorithmVisualisation.exe
+E:\coding\-- Projects --\SortingAlgorithmVisualisation\SortingAlgorithmVisualisation\obj\Debug\SortingAlgorithmVisualisation.pdb
+E:\coding\-- Projects --\SortingAlgorithmVisualisation\SortingAlgorithmVisualisation\obj\Debug\SortingAlgorithmVisualisation.DisplaySort.resources
