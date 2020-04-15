@@ -1,3 +1,3 @@
 ## Sorting Algorithm Visualisation
 
-A Sorting Algorithm Visualiser made in C# WinForms, it Supports a Variety of Algorithms.
+A Sorting Algorithm Visualiser made in C# Windows Forms
