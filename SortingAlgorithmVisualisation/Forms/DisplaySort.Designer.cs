@@ -33,10 +33,11 @@
             // 
             // algorithmPanel
             // 
+            this.algorithmPanel.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.algorithmPanel.BackColor = System.Drawing.SystemColors.ActiveBorder;
-            this.algorithmPanel.Location = new System.Drawing.Point(12, 0);
+            this.algorithmPanel.Location = new System.Drawing.Point(23, 12);
             this.algorithmPanel.Name = "algorithmPanel";
-            this.algorithmPanel.Size = new System.Drawing.Size(1145, 550);
+            this.algorithmPanel.Size = new System.Drawing.Size(1140, 521);
             this.algorithmPanel.TabIndex = 0;
             this.algorithmPanel.Paint += new System.Windows.Forms.PaintEventHandler(this.algorithmPanel_Paint);
             // 
@@ -44,7 +45,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1169, 545);
+            this.ClientSize = new System.Drawing.Size(1184, 545);
             this.Controls.Add(this.algorithmPanel);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.MaximizeBox = false;

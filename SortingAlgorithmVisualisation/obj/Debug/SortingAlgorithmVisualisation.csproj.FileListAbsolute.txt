@@ -9,3 +9,14 @@ E:\coding\-- Projects --\SortingAlgorithmVisualisation\SortingAlgorithmVisualisa
 E:\coding\-- Projects --\SortingAlgorithmVisualisation\SortingAlgorithmVisualisation\obj\Debug\SortingAlgorithmVisualisation.exe
 E:\coding\-- Projects --\SortingAlgorithmVisualisation\SortingAlgorithmVisualisation\obj\Debug\SortingAlgorithmVisualisation.pdb
 E:\coding\-- Projects --\SortingAlgorithmVisualisation\SortingAlgorithmVisualisation\obj\Debug\SortingAlgorithmVisualisation.DisplaySort.resources
+E:\coding\GitHub\Repos\AlgorithmVisualisation\SortingAlgorithmVisualisation\bin\Debug\SortingAlgorithmVisualisation.exe.config
+E:\coding\GitHub\Repos\AlgorithmVisualisation\SortingAlgorithmVisualisation\bin\Debug\SortingAlgorithmVisualisation.exe
+E:\coding\GitHub\Repos\AlgorithmVisualisation\SortingAlgorithmVisualisation\bin\Debug\SortingAlgorithmVisualisation.pdb
+E:\coding\GitHub\Repos\AlgorithmVisualisation\SortingAlgorithmVisualisation\obj\Debug\SortingAlgorithmVisualisation.csprojAssemblyReference.cache
+E:\coding\GitHub\Repos\AlgorithmVisualisation\SortingAlgorithmVisualisation\obj\Debug\SortingAlgorithmVisualisation.DisplaySort.resources
+E:\coding\GitHub\Repos\AlgorithmVisualisation\SortingAlgorithmVisualisation\obj\Debug\SortingAlgorithmVisualisation.MainMenuForm.resources
+E:\coding\GitHub\Repos\AlgorithmVisualisation\SortingAlgorithmVisualisation\obj\Debug\SortingAlgorithmVisualisation.Properties.Resources.resources
+E:\coding\GitHub\Repos\AlgorithmVisualisation\SortingAlgorithmVisualisation\obj\Debug\SortingAlgorithmVisualisation.csproj.GenerateResource.cache
+E:\coding\GitHub\Repos\AlgorithmVisualisation\SortingAlgorithmVisualisation\obj\Debug\SortingAlgorithmVisualisation.csproj.CoreCompileInputs.cache
+E:\coding\GitHub\Repos\AlgorithmVisualisation\SortingAlgorithmVisualisation\obj\Debug\SortingAlgorithmVisualisation.exe
+E:\coding\GitHub\Repos\AlgorithmVisualisation\SortingAlgorithmVisualisation\obj\Debug\SortingAlgorithmVisualisation.pdb
