@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using SortingAlgorithmVisualisation.Algorithms;
 
 namespace SortingAlgorithmVisualisation
 {
@@ -15,6 +16,7 @@ namespace SortingAlgorithmVisualisation
         private string selectedAlgorithm;
         private int elementCount;
         private int threadDelay;
+        private AlgorithmBase algorithm;
 
         public MainMenuForm()
         {
@@ -26,14 +28,64 @@ namespace SortingAlgorithmVisualisation
 
         }
 
-        private void runButton_Click(object sender, EventArgs e)
+        private void RunButton_Click(object sender, EventArgs e)
         {
-            getDisplayParameters();
+            if(SetAlgorithmParameters()) //Sets parameters needed, validates that algorithm is selected
+            {
+                SetDisplayParameters();
 
-            showDisplayForm();
+                ShowDisplayForm();
+            }
         }
 
-        private void getDisplayParameters()
+        private bool SetAlgorithmParameters()
+        {
+            foreach(RadioButton rb in ActiveForm.Controls.OfType<RadioButton>())
+            {
+                if(rb.Checked)
+                {
+                    selectedAlgorithm = rb.AccessibleName;
+                    break;
+                }
+            }
+
+            switch(selectedAlgorithm)
+            {
+                case "Bubble Sort":
+                    algorithm = new BubbleSort();
+                    break;
+                case "Merge Sort":
+                    algorithm = new MergeSort();
+                    break;
+                case "Insertion Sort":
+                    algorithm = new InsertionSort();
+                    break;
+                case "Heap Sort":
+                    algorithm = new HeapSort();
+                    break;
+                case "Bogo Sort":
+                    algorithm = new BogoSort();
+                    break;
+                case "Selection Sort":
+                    algorithm = new SelectionSort();
+                    break;
+                case "Quick Sort":
+                    algorithm = new QuickSort();
+                    break;
+                case "Cocktail Sort":
+                    algorithm = new CocktailSort();
+                    break;
+                case "Radix Sort":
+                    algorithm = new RadixSort();
+                    break;
+                case null:
+                    MessageBox.Show("Please select an algorithm","Error");
+                    return false;
+            }
+            return true;
+        }
+
+        private void SetDisplayParameters()
         {
             int userDefinedSize = sizeTrackBar.Value;
 
@@ -63,9 +115,9 @@ namespace SortingAlgorithmVisualisation
             }
         }
 
-        private void showDisplayForm()
+        private void ShowDisplayForm()
         {
-            DisplaySort d = new DisplaySort(elementCount, threadDelay);
+            DisplaySort d = new DisplaySort(elementCount, threadDelay, algorithm);
 
             d.Text = ($"Showing {selectedAlgorithm} on {elementCount} elements");
             d.Visible = true;

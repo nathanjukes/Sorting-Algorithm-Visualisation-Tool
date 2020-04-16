@@ -39,7 +39,7 @@
             this.algorithmPanel.Name = "algorithmPanel";
             this.algorithmPanel.Size = new System.Drawing.Size(1140, 521);
             this.algorithmPanel.TabIndex = 0;
-            this.algorithmPanel.Paint += new System.Windows.Forms.PaintEventHandler(this.algorithmPanel_Paint);
+            this.algorithmPanel.Paint += new System.Windows.Forms.PaintEventHandler(this.AlgorithmPanel_Paint);
             // 
             // DisplaySort
             // 

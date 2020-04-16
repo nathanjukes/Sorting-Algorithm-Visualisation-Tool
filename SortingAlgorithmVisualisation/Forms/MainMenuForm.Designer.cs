@@ -50,11 +50,13 @@
             this.button1.TabIndex = 0;
             this.button1.Text = "runButton";
             this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.runButton_Click);
+            this.button1.Click += new System.EventHandler(this.RunButton_Click);
             // 
             // radioButton1
             // 
+            this.radioButton1.AccessibleName = "Bubble Sort";
             this.radioButton1.AutoSize = true;
+            this.radioButton1.Checked = true;
             this.radioButton1.Location = new System.Drawing.Point(40, 114);
             this.radioButton1.Name = "radioButton1";
             this.radioButton1.Size = new System.Drawing.Size(80, 17);
@@ -65,6 +67,7 @@
             // 
             // radioButton2
             // 
+            this.radioButton2.AccessibleName = "Merge Sort";
             this.radioButton2.AutoSize = true;
             this.radioButton2.Location = new System.Drawing.Point(43, 154);
             this.radioButton2.Name = "radioButton2";
@@ -76,6 +79,7 @@
             // 
             // radioButton3
             // 
+            this.radioButton3.AccessibleName = "Insertion Sort";
             this.radioButton3.AutoSize = true;
             this.radioButton3.Location = new System.Drawing.Point(43, 204);
             this.radioButton3.Name = "radioButton3";
@@ -87,6 +91,7 @@
             // 
             // radioButton4
             // 
+            this.radioButton4.AccessibleName = "Quick Sort";
             this.radioButton4.AutoSize = true;
             this.radioButton4.Location = new System.Drawing.Point(43, 365);
             this.radioButton4.Name = "radioButton4";
@@ -98,6 +103,7 @@
             // 
             // radioButton5
             // 
+            this.radioButton5.AccessibleName = "Heap Sort";
             this.radioButton5.AutoSize = true;
             this.radioButton5.Location = new System.Drawing.Point(43, 245);
             this.radioButton5.Name = "radioButton5";
@@ -109,6 +115,7 @@
             // 
             // radioButton6
             // 
+            this.radioButton6.AccessibleName = "Bogo Sort";
             this.radioButton6.AutoSize = true;
             this.radioButton6.Location = new System.Drawing.Point(43, 289);
             this.radioButton6.Name = "radioButton6";
@@ -120,6 +127,7 @@
             // 
             // radioButton7
             // 
+            this.radioButton7.AccessibleName = "Selection Sort";
             this.radioButton7.AutoSize = true;
             this.radioButton7.Location = new System.Drawing.Point(43, 328);
             this.radioButton7.Name = "radioButton7";
@@ -131,6 +139,7 @@
             // 
             // radioButton9
             // 
+            this.radioButton9.AccessibleName = "Radix Sort";
             this.radioButton9.AutoSize = true;
             this.radioButton9.Location = new System.Drawing.Point(283, 289);
             this.radioButton9.Name = "radioButton9";
@@ -142,6 +151,7 @@
             // 
             // radioButton10
             // 
+            this.radioButton10.AccessibleName = "Cocktail Sort";
             this.radioButton10.AutoSize = true;
             this.radioButton10.Location = new System.Drawing.Point(45, 388);
             this.radioButton10.Name = "radioButton10";
@@ -159,7 +169,6 @@
             this.sizeTrackBar.Name = "sizeTrackBar";
             this.sizeTrackBar.Size = new System.Drawing.Size(158, 45);
             this.sizeTrackBar.TabIndex = 12;
-            this.sizeTrackBar.Value = 5;
             // 
             // MainMenuForm
             // 

@@ -45,6 +45,16 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Algorithms\AlgorithmBase.cs" />
+    <Compile Include="Algorithms\BogoSort.cs" />
+    <Compile Include="Algorithms\BubbleSort.cs" />
+    <Compile Include="Algorithms\CocktailSort.cs" />
+    <Compile Include="Algorithms\HeapSort.cs" />
+    <Compile Include="Algorithms\InsertionSort.cs" />
+    <Compile Include="Algorithms\MergeSort.cs" />
+    <Compile Include="Algorithms\QuickSort.cs" />
+    <Compile Include="Algorithms\RadixSort.cs" />
+    <Compile Include="Algorithms\SelectionSort.cs" />
     <Compile Include="Forms\DisplaySort.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -87,8 +97,6 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Algorithms\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
