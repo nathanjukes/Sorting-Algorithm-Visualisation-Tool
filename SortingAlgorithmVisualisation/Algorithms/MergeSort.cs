@@ -9,6 +9,8 @@ namespace SortingAlgorithmVisualisation.Algorithms
 {
     class MergeSort : AlgorithmBase
     {
+        public override int elementCount { get; set; }
+
         public override void BeginAlgorithm(Graphics graphics, int maxHeight, int maxWidth, int[] elements)
         {
     

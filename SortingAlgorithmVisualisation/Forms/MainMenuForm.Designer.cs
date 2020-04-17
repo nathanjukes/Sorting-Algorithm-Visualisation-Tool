@@ -169,6 +169,7 @@
             this.sizeTrackBar.Name = "sizeTrackBar";
             this.sizeTrackBar.Size = new System.Drawing.Size(158, 45);
             this.sizeTrackBar.TabIndex = 12;
+            this.sizeTrackBar.Value = 1;
             // 
             // MainMenuForm
             // 
@@ -192,7 +193,6 @@
             this.Name = "MainMenuForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Main Menu";
-            this.Load += new System.EventHandler(this.MainMenuForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.sizeTrackBar)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

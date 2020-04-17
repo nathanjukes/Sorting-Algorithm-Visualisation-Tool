@@ -9,6 +9,8 @@ namespace SortingAlgorithmVisualisation.Algorithms
 {
     public abstract class AlgorithmBase
     {
+        public abstract int elementCount { get; set; }
+
         public abstract void BeginAlgorithm(Graphics graphics, int maxHeight, int maxWidth, int[] elements);
     }
 }

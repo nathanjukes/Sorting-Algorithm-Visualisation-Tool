@@ -6,6 +6,7 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Threading;
 using System.Windows.Forms;
 using System.Diagnostics;
 using SortingAlgorithmVisualisation.Algorithms;
@@ -24,7 +25,7 @@ namespace SortingAlgorithmVisualisation
         {
             InitializeComponent();
 
-            elementCount = _elementCount; //Change to _elementCount
+            elementCount = _elementCount;
             threadDelay = _threadDelay;
             algorithm = _algorithm;
        
@@ -34,7 +35,7 @@ namespace SortingAlgorithmVisualisation
 
         private void AlgorithmPanel_Paint(object sender, PaintEventArgs e)
         {
-            int[] elements = new int[elementCount];
+            elements = new int[elementCount];
             Graphics graphics = algorithmPanel.CreateGraphics();
 
             int maxWidth = algorithmPanel.Width / elementCount;  //Width of each 
@@ -54,6 +55,7 @@ namespace SortingAlgorithmVisualisation
 
         private void BeginSorting(Graphics graphics, int maxWidth, int maxHeight, int[] elements)
         {
+            Thread.Sleep(1000);
             algorithm.BeginAlgorithm(graphics, maxWidth, maxHeight, elements);
         }
     }

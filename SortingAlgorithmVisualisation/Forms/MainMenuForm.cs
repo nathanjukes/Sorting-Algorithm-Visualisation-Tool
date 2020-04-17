@@ -23,11 +23,6 @@ namespace SortingAlgorithmVisualisation
             InitializeComponent();
         }
 
-        private void MainMenuForm_Load(object sender, EventArgs e)
-        {
-
-        }
-
         private void RunButton_Click(object sender, EventArgs e)
         {
             if(SetAlgorithmParameters()) //Sets parameters needed, validates that algorithm is selected
@@ -117,10 +112,11 @@ namespace SortingAlgorithmVisualisation
 
         private void ShowDisplayForm()
         {
-            DisplaySort d = new DisplaySort(elementCount, threadDelay, algorithm);
-
-            d.Text = ($"Showing {selectedAlgorithm} on {elementCount} elements");
-            d.Visible = true;
+            DisplaySort display = new DisplaySort(elementCount, threadDelay, algorithm)
+            {
+                Text = ($"Showing {selectedAlgorithm} on {elementCount} elements"),
+                Visible = true
+            };
         }
     }
 }
