@@ -13,11 +13,13 @@ namespace SortingAlgorithmVisualisation.Algorithms
     {
         public override int elementCount { get; set; }
         private int[] elements;
+        private int threadDelay;
 
-        public override void BeginAlgorithm(Graphics graphics, int maxWidth, int maxHeight, int[]_elements)
+        public override void BeginAlgorithm(Graphics graphics, int maxWidth, int maxHeight, int[] _elements, int _threadDelay)
         {
             elements = _elements;
             elementCount = elements.Length;
+            threadDelay = _threadDelay;
     
             Sort(elements, graphics, maxWidth, maxHeight);
         }
@@ -31,7 +33,7 @@ namespace SortingAlgorithmVisualisation.Algorithms
                     if (elements[j] > elements[j + 1])
                     {
                         int tempValue = elements[j];
-
+                        
                         //If two elements are switching, clear the two current rectangles
                         graphics.FillRectangle(new SolidBrush(SystemColors.ActiveBorder), j * maxWidth, maxHeight - elements[j], maxWidth, elements[j]);
                         graphics.FillRectangle(new SolidBrush(SystemColors.ActiveBorder), (j+1) * maxWidth, maxHeight - elements[j+1], maxWidth, elements[j+1]);
@@ -41,10 +43,17 @@ namespace SortingAlgorithmVisualisation.Algorithms
                  
                         //Replace the rectangles with the new values
                         graphics.FillRectangle(new SolidBrush(Color.Black), (j) * maxWidth, maxHeight - elements[j], maxWidth, elements[j]);
-                        graphics.FillRectangle(new SolidBrush(Color.Black), (j + 1) * maxWidth, maxHeight - elements[j + 1], maxWidth, elements[j + 1]);
+                        graphics.FillRectangle(new SolidBrush(Color.DarkRed), (j + 1) * maxWidth, maxHeight - elements[j + 1], maxWidth, elements[j + 1]);
+                        
+                        Thread.Sleep(threadDelay);
+
+                        //Replace the sorted rectangle back to black
+                        graphics.FillRectangle(new SolidBrush(Color.Black), (j + 1) * maxWidth, maxHeight - elements[j + 1], maxWidth, elements[j + 1]); 
                     }
                 }
             }
+
+            ShowCompletedDisplay(graphics, maxWidth, maxHeight, elements, threadDelay);
         }
     }
 }

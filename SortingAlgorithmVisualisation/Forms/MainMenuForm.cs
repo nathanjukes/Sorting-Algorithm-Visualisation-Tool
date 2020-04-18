@@ -88,18 +88,19 @@ namespace SortingAlgorithmVisualisation
             {
                 case 0:
                     elementCount = 10;
-                    threadDelay = 2000;
+                    threadDelay = 200;
                     break;
                 case 1:
                     elementCount = 57;
-                    threadDelay = 350;
+                    threadDelay = 30;
                     break;
                 case 2:
                     elementCount = 190;
-                    threadDelay = 100;
+                    threadDelay = 8;
                     break;
                 case 3:
                     elementCount = 380;
+                    threadDelay = 1;
                     break;
                 case 4:
                     elementCount = 570;

@@ -55,6 +55,7 @@
     <Compile Include="Algorithms\QuickSort.cs" />
     <Compile Include="Algorithms\RadixSort.cs" />
     <Compile Include="Algorithms\SelectionSort.cs" />
+    <Compile Include="Formatting\FormattingDisplay.cs" />
     <Compile Include="Forms\DisplaySort.cs">
       <SubType>Form</SubType>
     </Compile>

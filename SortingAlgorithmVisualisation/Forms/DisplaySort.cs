@@ -55,8 +55,7 @@ namespace SortingAlgorithmVisualisation
 
         private void BeginSorting(Graphics graphics, int maxWidth, int maxHeight, int[] elements)
         {
-            Thread.Sleep(1000);
-            algorithm.BeginAlgorithm(graphics, maxWidth, maxHeight, elements);
+            algorithm.BeginAlgorithm(graphics, maxWidth, maxHeight, elements, threadDelay);
         }
     }
 }
