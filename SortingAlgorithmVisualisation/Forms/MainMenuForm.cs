@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using SortingAlgorithmVisualisation.Algorithms;
+using System.Diagnostics;
 
 namespace SortingAlgorithmVisualisation
 {
@@ -29,13 +30,25 @@ namespace SortingAlgorithmVisualisation
             {
                 SetDisplayParameters();
 
+                if(originalTimeBox.Checked)
+                {
+                    if(threadDelay == 200)
+                    {
+                        threadDelay = 13;
+                    }
+                    else
+                    {
+                        threadDelay = 0;
+                    }
+                }
+
                 ShowDisplayForm();
             }
         }
 
         private bool SetAlgorithmParameters()
         {
-            foreach(RadioButton rb in ActiveForm.Controls.OfType<RadioButton>())
+            foreach(RadioButton rb in AlgorithmGroupBox.Controls.OfType<RadioButton>())
             {
                 if(rb.Checked)
                 {
@@ -96,7 +109,7 @@ namespace SortingAlgorithmVisualisation
                     break;
                 case 2:
                     elementCount = 190;
-                    threadDelay = 8;
+                    threadDelay = 2;
                     break;
                 case 3:
                     elementCount = 380;
@@ -118,6 +131,16 @@ namespace SortingAlgorithmVisualisation
                 Text = ($"Showing {selectedAlgorithm} on {elementCount} elements"),
                 Visible = true
             };
+        }
+
+        private void RadioButton_CheckedChanged(object sender, EventArgs e)
+        {
+            selectedAlgorithmLabel.Text = ($"{(sender as RadioButton).AccessibleName} Selected");
+        }
+
+        private void githubLinkLabel_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            Process.Start("https://github.com/nathanjukes/Sorting-Algorithm-Visualisation");
         }
     }
 }
