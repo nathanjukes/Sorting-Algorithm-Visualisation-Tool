@@ -6,9 +6,10 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Threading;
 using System.Windows.Forms;
-using SortingAlgorithmVisualisation.Algorithms;
 using System.Diagnostics;
+using SortingAlgorithmVisualisation.Algorithms;
 
 namespace SortingAlgorithmVisualisation
 {
@@ -26,7 +27,8 @@ namespace SortingAlgorithmVisualisation
 
         private void RunButton_Click(object sender, EventArgs e)
         {
-            if(SetAlgorithmParameters()) //Sets parameters needed, validates that algorithm is selected
+
+            if (SetAlgorithmParameters()) //Sets parameters needed, validates that algorithm is selected
             {
                 SetDisplayParameters();
 
@@ -56,7 +58,7 @@ namespace SortingAlgorithmVisualisation
                     break;
                 }
             }
-
+            
             switch(selectedAlgorithm)
             {
                 case "Bubble Sort":
@@ -138,7 +140,7 @@ namespace SortingAlgorithmVisualisation
             selectedAlgorithmLabel.Text = ($"{(sender as RadioButton).AccessibleName} Selected");
         }
 
-        private void githubLinkLabel_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        private void GithubLinkLabel_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
             Process.Start("https://github.com/nathanjukes/Sorting-Algorithm-Visualisation");
         }

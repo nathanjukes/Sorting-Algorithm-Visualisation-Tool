@@ -21,7 +21,6 @@ namespace SortingAlgorithmVisualisation.Formatting
                 threadDelay = 1;
             }
             
-
             for(int i = 0; i < elements.Length; i++)
             {
                 graphics.FillRectangle(new SolidBrush(Color.ForestGreen), i * maxWidth, maxHeight - elements[i], maxWidth, elements[i]);

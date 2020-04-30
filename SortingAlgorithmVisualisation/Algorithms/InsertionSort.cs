@@ -11,7 +11,7 @@ namespace SortingAlgorithmVisualisation.Algorithms
     {
         public override int elementCount { get; set; }
 
-        public override void BeginAlgorithm(Graphics graphics, int maxHeight, int maxWidth, int[] elements, int threadDelay)
+        public override void BeginAlgorithm(Graphics graphics, int maxWidth, int maxHeight, int[] elements, int threadDelay)
         {
 
         }

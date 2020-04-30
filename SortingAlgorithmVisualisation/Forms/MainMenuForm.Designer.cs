@@ -43,11 +43,13 @@
             this.originalTimeBox = new System.Windows.Forms.CheckBox();
             this.selectedAlgorithmLabel = new System.Windows.Forms.Label();
             this.AlgorithmGroupBox = new System.Windows.Forms.GroupBox();
+            this.radioButton11 = new System.Windows.Forms.RadioButton();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.githubLinkLabel = new System.Windows.Forms.LinkLabel();
+            this.BackgroundDrawWorker = new System.ComponentModel.BackgroundWorker();
             ((System.ComponentModel.ISupportInitialize)(this.sizeTrackBar)).BeginInit();
             this.AlgorithmGroupBox.SuspendLayout();
             this.SuspendLayout();
@@ -89,7 +91,6 @@
             this.radioButton2.Name = "radioButton2";
             this.radioButton2.Size = new System.Drawing.Size(138, 28);
             this.radioButton2.TabIndex = 2;
-            this.radioButton2.TabStop = true;
             this.radioButton2.Text = "Merge Sort";
             this.radioButton2.UseVisualStyleBackColor = true;
             this.radioButton2.CheckedChanged += new System.EventHandler(this.RadioButton_CheckedChanged);
@@ -103,7 +104,6 @@
             this.radioButton3.Name = "radioButton3";
             this.radioButton3.Size = new System.Drawing.Size(154, 28);
             this.radioButton3.TabIndex = 3;
-            this.radioButton3.TabStop = true;
             this.radioButton3.Text = "Insertion Sort";
             this.radioButton3.UseVisualStyleBackColor = true;
             this.radioButton3.CheckedChanged += new System.EventHandler(this.RadioButton_CheckedChanged);
@@ -117,7 +117,6 @@
             this.radioButton4.Name = "radioButton4";
             this.radioButton4.Size = new System.Drawing.Size(130, 28);
             this.radioButton4.TabIndex = 4;
-            this.radioButton4.TabStop = true;
             this.radioButton4.Text = "Quick Sort";
             this.radioButton4.UseVisualStyleBackColor = true;
             this.radioButton4.CheckedChanged += new System.EventHandler(this.RadioButton_CheckedChanged);
@@ -131,7 +130,6 @@
             this.radioButton5.Name = "radioButton5";
             this.radioButton5.Size = new System.Drawing.Size(127, 28);
             this.radioButton5.TabIndex = 5;
-            this.radioButton5.TabStop = true;
             this.radioButton5.Text = "Heap Sort";
             this.radioButton5.UseVisualStyleBackColor = true;
             this.radioButton5.CheckedChanged += new System.EventHandler(this.RadioButton_CheckedChanged);
@@ -145,7 +143,6 @@
             this.radioButton6.Name = "radioButton6";
             this.radioButton6.Size = new System.Drawing.Size(125, 28);
             this.radioButton6.TabIndex = 6;
-            this.radioButton6.TabStop = true;
             this.radioButton6.Text = "Bogo Sort";
             this.radioButton6.UseVisualStyleBackColor = true;
             this.radioButton6.CheckedChanged += new System.EventHandler(this.RadioButton_CheckedChanged);
@@ -159,7 +156,6 @@
             this.radioButton7.Name = "radioButton7";
             this.radioButton7.Size = new System.Drawing.Size(165, 28);
             this.radioButton7.TabIndex = 7;
-            this.radioButton7.TabStop = true;
             this.radioButton7.Text = "Selection Sort";
             this.radioButton7.UseVisualStyleBackColor = true;
             this.radioButton7.CheckedChanged += new System.EventHandler(this.RadioButton_CheckedChanged);
@@ -173,7 +169,6 @@
             this.radioButton9.Name = "radioButton9";
             this.radioButton9.Size = new System.Drawing.Size(125, 28);
             this.radioButton9.TabIndex = 9;
-            this.radioButton9.TabStop = true;
             this.radioButton9.Text = "Radix Sort";
             this.radioButton9.UseVisualStyleBackColor = true;
             this.radioButton9.CheckedChanged += new System.EventHandler(this.RadioButton_CheckedChanged);
@@ -187,7 +182,6 @@
             this.radioButton10.Name = "radioButton10";
             this.radioButton10.Size = new System.Drawing.Size(156, 28);
             this.radioButton10.TabIndex = 10;
-            this.radioButton10.TabStop = true;
             this.radioButton10.Text = "Cocktail Sort";
             this.radioButton10.UseVisualStyleBackColor = true;
             this.radioButton10.CheckedChanged += new System.EventHandler(this.RadioButton_CheckedChanged);
@@ -230,6 +224,7 @@
             // AlgorithmGroupBox
             // 
             this.AlgorithmGroupBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(83)))), ((int)(((byte)(153)))), ((int)(((byte)(182)))));
+            this.AlgorithmGroupBox.Controls.Add(this.radioButton11);
             this.AlgorithmGroupBox.Controls.Add(this.panel1);
             this.AlgorithmGroupBox.Controls.Add(this.radioButton2);
             this.AlgorithmGroupBox.Controls.Add(this.radioButton1);
@@ -248,6 +243,19 @@
             this.AlgorithmGroupBox.TabIndex = 15;
             this.AlgorithmGroupBox.TabStop = false;
             this.AlgorithmGroupBox.Text = "Algorithms ";
+            // 
+            // radioButton11
+            // 
+            this.radioButton11.AccessibleName = "Quick Sort";
+            this.radioButton11.AutoSize = true;
+            this.radioButton11.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radioButton11.Location = new System.Drawing.Point(185, 60);
+            this.radioButton11.Name = "radioButton11";
+            this.radioButton11.Size = new System.Drawing.Size(130, 28);
+            this.radioButton11.TabIndex = 18;
+            this.radioButton11.Text = "Quick Sort";
+            this.radioButton11.UseVisualStyleBackColor = true;
+            this.radioButton11.CheckedChanged += new System.EventHandler(this.RadioButton_CheckedChanged);
             // 
             // panel1
             // 
@@ -304,7 +312,7 @@
             this.githubLinkLabel.TabIndex = 21;
             this.githubLinkLabel.TabStop = true;
             this.githubLinkLabel.Text = "https://github.com/nathanjukes/Sorting-Algorithm-Visualisation";
-            this.githubLinkLabel.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.githubLinkLabel_LinkClicked);
+            this.githubLinkLabel.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.GithubLinkLabel_LinkClicked);
             // 
             // MainMenuForm
             // 
@@ -357,6 +365,8 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.LinkLabel githubLinkLabel;
+        private System.Windows.Forms.RadioButton radioButton11;
+        private System.ComponentModel.BackgroundWorker BackgroundDrawWorker;
     }
 }
 

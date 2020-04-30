@@ -30,6 +30,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(DisplaySort));
             this.algorithmPanel = new System.Windows.Forms.Panel();
+            this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
             this.SuspendLayout();
             // 
             // algorithmPanel
@@ -55,6 +56,7 @@
             this.Name = "DisplaySort";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Display Sort";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.DisplaySort_FormClosed);
             this.ResumeLayout(false);
 
         }
@@ -62,5 +64,6 @@
         #endregion
 
         private System.Windows.Forms.Panel algorithmPanel;
+        private System.ComponentModel.BackgroundWorker backgroundWorker1;
     }
 }
