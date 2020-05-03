@@ -64,22 +64,20 @@ namespace SortingAlgorithmVisualisation.Algorithms
 
         private void SwapElements(int[] elements, int index1, int index2)
         {
-            graphics.FillRectangle(new SolidBrush(Color.Red), index1 * maxWidth, maxHeight - elements[index1], maxWidth, elements[index1]);
-            graphics.FillRectangle(new SolidBrush(Color.Red), index2 * maxWidth, maxHeight - elements[index2], maxWidth, elements[index2]);
+            graphics.FillRectangle(new SolidBrush(Color.DarkRed), index1 * maxWidth, maxHeight - elements[index1], maxWidth, elements[index1]);
+            graphics.FillRectangle(new SolidBrush(Color.DarkRed), index2 * maxWidth, maxHeight - elements[index2], maxWidth, elements[index2]);
+           
             Thread.Sleep(threadDelay);
 
             graphics.FillRectangle(new SolidBrush(SystemColors.ActiveBorder), index1 * maxWidth, maxHeight - elements[index1], maxWidth, elements[index1]);
             graphics.FillRectangle(new SolidBrush(SystemColors.ActiveBorder), index2 * maxWidth, maxHeight - elements[index2], maxWidth, elements[index2]);
 
-            int tempValue = elements[index1];
+            int tempValue = elements[index1]; //Swaps the elements
             elements[index1] = elements[index2];
             elements[index2] = tempValue;
 
-           
-
             graphics.FillRectangle(new SolidBrush(Color.Black), index1 * maxWidth, maxHeight - elements[index1], maxWidth, elements[index1]);
             graphics.FillRectangle(new SolidBrush(Color.Black), index2 * maxWidth, maxHeight - elements[index2], maxWidth, elements[index2]);
-            
         }
     }
 }

@@ -57,7 +57,6 @@ namespace SortingAlgorithmVisualisation.Algorithms
             
             while (leftIndex < leftSide.Length || rightIndex < rightSide.Length)
             {
-
                 if(leftIndex != leftSide.Length && rightIndex != rightSide.Length)
                 {
                     if (leftSide[leftIndex] <= rightSide[rightIndex])

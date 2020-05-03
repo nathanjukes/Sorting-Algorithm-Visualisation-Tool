@@ -53,7 +53,6 @@ namespace SortingAlgorithmVisualisation.Algorithms
                 }
             }
 
-            DisplaySort.SortComplete = true;
             ShowCompletedDisplay(graphics, maxWidth, maxHeight, elements, threadDelay);
         }
     }

@@ -11,9 +11,43 @@ namespace SortingAlgorithmVisualisation.Algorithms
     {
         public override int elementCount { get; set; }
 
-        public override void BeginAlgorithm(Graphics graphics, int maxWidth, int maxHeight, int[] elements, int threadDelay)
+        private Graphics graphics;
+        private int maxWidth;
+        private int maxHeight;
+        private int threadDelay;
+        private int[] elementsCopy;
+        public override void BeginAlgorithm(Graphics _graphics, int _maxWidth, int _maxHeight, int[] elements, int _threadDelay)
         {
-            
+            graphics = _graphics;
+            maxWidth = _maxWidth;
+            maxHeight = _maxHeight;
+            threadDelay = _threadDelay;
+            elementsCopy = elements;
+
+            StartBogoSort(elements);
+
+            ShowCompletedDisplay(graphics, maxWidth, maxHeight, elements, threadDelay);
+        }
+        private void StartBogoSort(int[] elements)
+        {
+            while(!CheckIfSorted(elements))
+            {
+
+                
+            }
+        }
+
+        private bool CheckIfSorted(int[] elements)
+        {
+            for(int i = 0; i < elements.Length; i++)
+            {
+                if(elements[i] > elements[i + 1])
+                {
+                    return false;
+                }
+            }
+
+            return true;
         }
     }
 }
