@@ -50,6 +50,7 @@
             this.label3 = new System.Windows.Forms.Label();
             this.githubLinkLabel = new System.Windows.Forms.LinkLabel();
             this.BackgroundDrawWorker = new System.ComponentModel.BackgroundWorker();
+            this.label2 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.sizeTrackBar)).BeginInit();
             this.AlgorithmGroupBox.SuspendLayout();
             this.SuspendLayout();
@@ -314,12 +315,27 @@
             this.githubLinkLabel.Text = "https://github.com/nathanjukes/Sorting-Algorithm-Visualisation";
             this.githubLinkLabel.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.GithubLinkLabel_LinkClicked);
             // 
+            // label2
+            // 
+            this.label2.BackColor = System.Drawing.Color.Transparent;
+            this.label2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.label2.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(83)))), ((int)(((byte)(153)))), ((int)(((byte)(182)))));
+            this.label2.Location = new System.Drawing.Point(359, 322);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(497, 73);
+            this.label2.TabIndex = 22;
+            this.label2.Text = "Please Note: Within the \'Bogo Sort\', the light blue colouring is used for display" +
+    "ing the original set of elements before the new sort is shown.\r\n\r\n\r\n";
+            this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
             // MainMenuForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(56)))), ((int)(((byte)(58)))));
             this.ClientSize = new System.Drawing.Size(862, 518);
+            this.Controls.Add(this.label2);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.selectedAlgorithmLabel);
@@ -367,6 +383,7 @@
         private System.Windows.Forms.LinkLabel githubLinkLabel;
         private System.Windows.Forms.RadioButton radioButton11;
         private System.ComponentModel.BackgroundWorker BackgroundDrawWorker;
+        private System.Windows.Forms.Label label2;
     }
 }
 

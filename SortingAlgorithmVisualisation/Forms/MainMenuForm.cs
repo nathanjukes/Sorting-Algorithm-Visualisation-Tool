@@ -27,7 +27,6 @@ namespace SortingAlgorithmVisualisation
 
         private void RunButton_Click(object sender, EventArgs e)
         {
-
             if (SetAlgorithmParameters()) //Sets parameters needed, validates that algorithm is selected
             {
                 SetDisplayParameters();
@@ -131,7 +130,7 @@ namespace SortingAlgorithmVisualisation
             DisplaySort display = new DisplaySort(elementCount, threadDelay, algorithm)
             {
                 Text = ($"Showing {selectedAlgorithm} on {elementCount} elements"),
-                Visible = true
+                Visible = true,
             };
         }
 

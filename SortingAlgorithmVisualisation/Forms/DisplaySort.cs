@@ -33,7 +33,7 @@ namespace SortingAlgorithmVisualisation
             elementCount = _elementCount;
             threadDelay = _threadDelay;
             algorithm = _algorithm;
-
+            
             //Add sounds
             algorithmPanel.Location = new Point((this.ClientSize.Width - algorithmPanel.Width) / 2, (this.ClientSize.Height - algorithmPanel.Height) / 2);
         }

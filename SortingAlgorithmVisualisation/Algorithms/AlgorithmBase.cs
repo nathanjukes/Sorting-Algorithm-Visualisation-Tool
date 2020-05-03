@@ -17,6 +17,7 @@ namespace SortingAlgorithmVisualisation.Algorithms
         protected void ShowCompletedDisplay(Graphics graphics, int maxWidth, int maxHeight, int[] elements, int threadDelay)
         {
             FormattingDisplay formatDisplay = new FormattingDisplay();
+
             formatDisplay.ShowAllGreen(graphics, maxWidth, maxHeight, elements, threadDelay);
         }
     }

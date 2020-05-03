@@ -4,7 +4,8 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-
+using System.Threading;
+using System.Windows.Forms;
 namespace SortingAlgorithmVisualisation.Algorithms
 {
     class BogoSort : AlgorithmBase
@@ -22,24 +23,74 @@ namespace SortingAlgorithmVisualisation.Algorithms
             maxWidth = _maxWidth;
             maxHeight = _maxHeight;
             threadDelay = _threadDelay;
-            elementsCopy = elements;
+            elementsCopy = (int[])elements.Clone();
 
             StartBogoSort(elements);
-
-            ShowCompletedDisplay(graphics, maxWidth, maxHeight, elements, threadDelay);
         }
         private void StartBogoSort(int[] elements)
         {
-            while(!CheckIfSorted(elements))
+            Random rnd = new Random();
+            Thread.Sleep(500);
+   
+            while (!CheckIfSorted(elements))
             {
+                HashSet<int> newIndex = new HashSet<int>();
+                int indexCount = 0;
 
-                
+                while (newIndex.Count != elements.Length)
+                {
+                    newIndex.Add(rnd.Next(0, elements.Length));
+                }
+
+                foreach (var i in newIndex)
+                {
+                    elements[i] = elementsCopy[indexCount];
+
+                    indexCount++;
+                }
+
+                for (int i = 0; i < elements.Length; i++)
+                {
+                    graphics.FillRectangle(new SolidBrush(SystemColors.ActiveBorder), i * maxWidth, maxHeight - elementsCopy[i], maxWidth, elementsCopy[i]);
+                    graphics.FillRectangle(new SolidBrush(Color.Black), i * maxWidth, maxHeight - elements[i], maxWidth, elements[i]);
+                }
+
+                Thread.Sleep(700);
+
+                if (CheckIfSorted(elements))
+                {
+                    ShowCompletedDisplay(graphics, maxWidth, maxHeight, elements, threadDelay);
+                    break;
+                }
+                else
+                {
+                    ShowIncorrectSort(elements);
+                    Thread.Sleep(1000);
+                    ClearDisplay(elementsCopy, elements);
+                    Thread.Sleep(800);
+                }
+            }
+        }
+
+        private void ClearDisplay(int[] originalElements, int[] elements)
+        {
+            for(int i = 0; i < elements.Length; i++)
+            {
+                graphics.FillRectangle(new SolidBrush(SystemColors.ActiveBorder), i * maxWidth, maxHeight - elements[i], maxWidth, elements[i]);;
+                graphics.FillRectangle(new SolidBrush(Color.FromArgb(83, 153, 182)), i * maxWidth, maxHeight - elementsCopy[i], maxWidth, elementsCopy[i]);
+            }
+        }
+        private void ShowIncorrectSort(int[] elements)
+        {
+            for (int i = 0; i < elements.Length; i++)
+            {
+                graphics.FillRectangle(new SolidBrush(Color.DarkRed), i * maxWidth, maxHeight - elements[i], maxWidth, elements[i]);
             }
         }
 
         private bool CheckIfSorted(int[] elements)
         {
-            for(int i = 0; i < elements.Length; i++)
+            for(int i = 0; i < elements.Length - 1; i++)
             {
                 if(elements[i] > elements[i + 1])
                 {
