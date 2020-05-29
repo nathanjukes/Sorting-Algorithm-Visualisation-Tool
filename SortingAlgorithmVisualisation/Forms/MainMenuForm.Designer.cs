@@ -51,6 +51,7 @@
             this.githubLinkLabel = new System.Windows.Forms.LinkLabel();
             this.BackgroundDrawWorker = new System.ComponentModel.BackgroundWorker();
             this.label2 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.sizeTrackBar)).BeginInit();
             this.AlgorithmGroupBox.SuspendLayout();
             this.SuspendLayout();
@@ -168,9 +169,9 @@
             this.radioButton9.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.radioButton9.Location = new System.Drawing.Point(6, 410);
             this.radioButton9.Name = "radioButton9";
-            this.radioButton9.Size = new System.Drawing.Size(125, 28);
+            this.radioButton9.Size = new System.Drawing.Size(266, 28);
             this.radioButton9.TabIndex = 9;
-            this.radioButton9.Text = "Radix Sort";
+            this.radioButton9.Text = "Radix Sort (LSD Base 10)";
             this.radioButton9.UseVisualStyleBackColor = true;
             this.radioButton9.CheckedChanged += new System.EventHandler(this.RadioButton_CheckedChanged);
             // 
@@ -181,9 +182,9 @@
             this.radioButton10.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.radioButton10.Location = new System.Drawing.Point(6, 310);
             this.radioButton10.Name = "radioButton10";
-            this.radioButton10.Size = new System.Drawing.Size(156, 28);
+            this.radioButton10.Size = new System.Drawing.Size(230, 28);
             this.radioButton10.TabIndex = 10;
-            this.radioButton10.Text = "Cocktail Sort";
+            this.radioButton10.Text = "Cocktail Shaker Sort";
             this.radioButton10.UseVisualStyleBackColor = true;
             this.radioButton10.CheckedChanged += new System.EventHandler(this.RadioButton_CheckedChanged);
             // 
@@ -329,12 +330,25 @@
     "ing the original set of elements before the new sort is shown.\r\n\r\n\r\n";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
+            // label5
+            // 
+            this.label5.BackColor = System.Drawing.Color.Transparent;
+            this.label5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.label5.Font = new System.Drawing.Font("Segoe UI Semibold", 21.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(83)))), ((int)(((byte)(153)))), ((int)(((byte)(182)))));
+            this.label5.Location = new System.Drawing.Point(365, 9);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(540, 115);
+            this.label5.TabIndex = 24;
+            this.label5.Text = "Nathan Jukes\' \r\nSorting Algorithm Visualisation Tool\r\n";
+            // 
             // MainMenuForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(56)))), ((int)(((byte)(58)))));
             this.ClientSize = new System.Drawing.Size(862, 518);
+            this.Controls.Add(this.label5);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label1);
@@ -384,6 +398,7 @@
         private System.Windows.Forms.RadioButton radioButton11;
         private System.ComponentModel.BackgroundWorker BackgroundDrawWorker;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label5;
     }
 }
 

@@ -55,7 +55,7 @@ namespace SortingAlgorithmVisualisation.Algorithms
         {
             graphics.FillRectangle(new SolidBrush(Color.DarkRed), index2 * maxWidth, maxHeight - elements[index2], maxWidth, elements[index2]);
 
-            Thread.Sleep(threadDelay);
+            Thread.Sleep(threadDelay + 50);
 
             graphics.FillRectangle(new SolidBrush(SystemColors.ActiveBorder), index1 * maxWidth, maxHeight - elements[index1], maxWidth, elements[index1]);
             graphics.FillRectangle(new SolidBrush(SystemColors.ActiveBorder), index2 * maxWidth, maxHeight - elements[index2], maxWidth, elements[index2]);
