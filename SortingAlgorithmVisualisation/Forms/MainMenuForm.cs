@@ -101,8 +101,17 @@ namespace SortingAlgorithmVisualisation
             switch(userDefinedSize)
             {
                 case 0:
-                    elementCount = 10;
-                    threadDelay = 200;
+                    if(selectedAlgorithm == "Merge Sort")
+                    {
+                        MessageBox.Show("The smallest size is not available for Merge Sort, it has been switched to next level","Unavailable size");
+                        elementCount = 57;
+                        threadDelay = 30;
+                    }
+                    else
+                    {
+                        elementCount = 10;
+                        threadDelay = 200;
+                    }
                     break;
                 case 1:
                     elementCount = 57;

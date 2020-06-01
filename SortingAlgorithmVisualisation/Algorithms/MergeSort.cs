@@ -16,8 +16,8 @@ namespace SortingAlgorithmVisualisation.Algorithms
         private int maxWidth;
         private int maxHeight;
         private int threadDelay;
-        private int graphicCount;
-
+        private int offset;
+        private int qCount = 0;
         public override void BeginAlgorithm(Graphics _graphics, int _maxWidth, int _maxHeight, int[] elements, int _threadDelay)
         {
             graphics = _graphics;
@@ -26,9 +26,11 @@ namespace SortingAlgorithmVisualisation.Algorithms
             threadDelay = _threadDelay;
             elementCount = elements.Length;
             
-            int[] sortedElements = SplitArray(elements);
+            SplitArray(elements);
 
-            ShowCompletedDisplay(graphics, maxWidth, maxHeight, sortedElements, threadDelay);
+            Thread.Sleep(600);
+
+            ShowCompletedDisplay(graphics, maxWidth, maxHeight, elements, threadDelay);
         }
 
         private int[] SplitArray(int[] unsortedElements)
@@ -43,74 +45,91 @@ namespace SortingAlgorithmVisualisation.Algorithms
 
             leftSideArray = SplitArray(leftSideArray);
             rightSideArray = SplitArray(rightSideArray);
-            
-            return SortElements(leftSideArray, rightSideArray);
+
+            return SortElements(leftSideArray, rightSideArray, unsortedElements);
         }
 
-        private int[] SortElements(int[] leftSide, int[] rightSide)
+        private int[] SortElements(int[] leftSide, int[] rightSide, int[] elements)
         {
             int leftIndex = 0;
             int rightIndex = 0;
             int count = 0;
 
-            int[] sortedElements = new int[leftSide.Length + rightSide.Length];
-            
             while (leftIndex < leftSide.Length || rightIndex < rightSide.Length)
             {
-                if(leftIndex != leftSide.Length && rightIndex != rightSide.Length)
+                if (leftIndex != leftSide.Length && rightIndex != rightSide.Length)
                 {
                     if (leftSide[leftIndex] <= rightSide[rightIndex])
                     {
-                        sortedElements[count] = leftSide[leftIndex];
-
-                        //graphics.FillRectangle(new SolidBrush(SystemColors.ActiveBorder), (count) * maxWidth, maxHeight - leftSide[leftIndex], maxWidth, leftSide[leftIndex]);
-                        //graphics.FillRectangle(new SolidBrush(SystemColors.ActiveBorder), (count) * maxWidth, maxHeight - rightSide[rightIndex], maxWidth, rightSide[rightIndex]);
-
-                        //graphics.FillRectangle(new SolidBrush(Color.Black), (graphicCount + count) * maxWidth, maxHeight - leftSide[leftIndex], maxWidth, leftSide[leftIndex]);
-                        //graphics.FillRectangle(new SolidBrush(Color.Black), (graphicCount + count +1) * maxWidth, maxHeight - rightSide[rightIndex], maxWidth, rightSide[rightIndex]);
-
+                        elements[count] = leftSide[leftIndex];
                         leftIndex++;
                         count++;
-                        graphicCount++;
                     }
                     else
                     {
-                        sortedElements[count] = rightSide[rightIndex];
-
-                        //graphics.FillRectangle(new SolidBrush(SystemColors.ActiveBorder), (graphicCount + count) * maxWidth, maxHeight - leftSide[leftIndex], maxWidth, leftSide[leftIndex]);
-                        //graphics.FillRectangle(new SolidBrush(SystemColors.ActiveBorder), (graphicCount + count) * maxWidth, maxHeight - rightSide[rightIndex], maxWidth, rightSide[rightIndex]);
-
-                        //graphics.FillRectangle(new SolidBrush(Color.Black), (graphicCount + count +1) * maxWidth, maxHeight - leftSide[leftIndex], maxWidth, leftSide[leftIndex]);
-                        //graphics.FillRectangle(new SolidBrush(Color.Black), (graphicCount + count) * maxWidth, maxHeight - rightSide[rightIndex], maxWidth, rightSide[rightIndex]);
-
+                        elements[count] = rightSide[rightIndex];
                         rightIndex++;
                         count++;
-                        graphicCount++;
                     }
                 }
                 else
                 {
                     if (leftIndex == leftSide.Length)
                     {
-                        sortedElements[count] = rightSide[rightIndex];
-
-                        //graphics.FillRectangle(new SolidBrush(Color.Black), (graphicCount + count) * maxWidth, maxHeight - rightSide[rightIndex], maxWidth, rightSide[rightIndex]);
+                        elements[count] = rightSide[rightIndex];
                         rightIndex++;
                         count++;
-                        graphicCount++;
                     }
                     else if (rightIndex == rightSide.Length)
                     {
-                        sortedElements[count] = leftSide[leftIndex];
-                        //graphics.FillRectangle(new SolidBrush(Color.Black), (graphicCount + count) * maxWidth, maxHeight - leftSide[leftIndex], maxWidth, leftSide[leftIndex]);
+                        elements[count] = leftSide[leftIndex];
                         leftIndex++;
                         count++;
-                    } 
+                    }
                 }
-                
+            }
+            ReDrawGraphics(elements);
+
+            if ((elements.Length % (elementCount / 4)) == 0 || (elements.Length % (elementCount / 4)) == 1 && qCount >= 1)
+            {
+                offset = elements.Length;
+                qCount++;
+
+                switch(qCount)
+                {
+                    case 2:
+                        offset = 0;
+                        break;
+                    case 3:
+                        offset = elementCount / 2;
+                        Thread.Sleep(300);
+                        break;
+                    case 4:
+                        offset = (elementCount / 2) + elements.Length;
+                        Thread.Sleep(300);
+                        break;
+                    case 5:
+                        offset = elementCount / 2;
+                        Thread.Sleep(300);
+                        break;
+                    case 6:
+                        offset = 0;
+                        Thread.Sleep(300);
+                        break;
+                }
             }
 
-            return sortedElements;
+            Thread.Sleep(threadDelay);
+            return elements;
+        }
+
+        private void ReDrawGraphics(int[] elements)
+        {
+            for (int i = 0; i < elements.Length; i++)
+            {
+                graphics.FillRectangle(new SolidBrush(SystemColors.ActiveBorder), (i + offset) * maxWidth, 0, maxWidth, maxHeight);
+                graphics.FillRectangle(new SolidBrush(Color.Black), (i + offset) * maxWidth, maxHeight - elements[i], maxWidth, elements[i]);
+            }
         }
     }
 }
