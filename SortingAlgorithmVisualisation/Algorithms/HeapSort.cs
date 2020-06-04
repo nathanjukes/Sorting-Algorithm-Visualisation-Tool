@@ -32,7 +32,7 @@ namespace SortingAlgorithmVisualisation.Algorithms
 
             sortedLength = elements.Length;
 
-            if(elements.Length % 2 == 0)
+            if (elements.Length % 2 == 0)
             {
                 leftOffset--;
                 rightOffset--;
@@ -47,9 +47,9 @@ namespace SortingAlgorithmVisualisation.Algorithms
 
         private void Heapify(int[] elements)
         {
-            for(int i = 0; i < elements.Length / 3; i++)
+            for(int i = 0; i < 2; i++)
             {
-                for(int j = (elements.Length / 2) - 1; j >= 0; j--)
+                for (int j = (elements.Length / 2) - 1; j >= 0; j--)
                 {
                     int? highestIndex = null;
                     int leftIndex = (j * 2) + leftOffset;
@@ -65,7 +65,7 @@ namespace SortingAlgorithmVisualisation.Algorithms
                         highestIndex = rightIndex;
                     }
 
-                    if(highestIndex.HasValue)
+                    if (highestIndex.HasValue)
                     {
                         if (elements[Convert.ToInt32(highestIndex)] > elements[j])
                         {
@@ -78,7 +78,7 @@ namespace SortingAlgorithmVisualisation.Algorithms
 
         private void DeleteElements(int[] elements)
         {
-            for(int i = elements.Length - 1; i >= 0; i--)
+            for (int i = elements.Length - 1; i >= 0; i--)
             {
                 SwapElements(0, i, elements);
 
@@ -87,7 +87,7 @@ namespace SortingAlgorithmVisualisation.Algorithms
                 Heapify(elements);
             }
 
-            if(elements[0] > elements[1])
+            if (elements[0] > elements[1])
             {
                 SwapElements(0, 1, elements);
             }
