@@ -28,7 +28,7 @@ namespace SortingAlgorithmVisualisation.Algorithms
             
             SplitArray(elements);
 
-            Thread.Sleep(600);
+            Thread.Sleep(200);
 
             ShowCompletedDisplay(graphics, maxWidth, maxHeight, elements, threadDelay);
         }
