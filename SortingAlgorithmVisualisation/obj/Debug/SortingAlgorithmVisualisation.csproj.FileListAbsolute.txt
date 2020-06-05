@@ -20,3 +20,4 @@ E:\coding\GitHub\Repos\AlgorithmVisualisation\SortingAlgorithmVisualisation\obj\
 E:\coding\GitHub\Repos\AlgorithmVisualisation\SortingAlgorithmVisualisation\obj\Debug\SortingAlgorithmVisualisation.csproj.CoreCompileInputs.cache
 E:\coding\GitHub\Repos\AlgorithmVisualisation\SortingAlgorithmVisualisation\obj\Debug\SortingAlgorithmVisualisation.exe
 E:\coding\GitHub\Repos\AlgorithmVisualisation\SortingAlgorithmVisualisation\obj\Debug\SortingAlgorithmVisualisation.pdb
+E:\coding\GitHub\Repos\AlgorithmVisualisation\SortingAlgorithmVisualisation\obj\Debug\SortingAlgorithmVisualisation.Forms.ComplexityPopUpForm.resources

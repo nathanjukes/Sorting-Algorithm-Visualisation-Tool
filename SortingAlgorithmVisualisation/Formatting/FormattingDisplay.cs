@@ -23,7 +23,7 @@ namespace SortingAlgorithmVisualisation.Formatting
             
             for(int i = 0; i < elements.Length; i++)
             {
-                graphics.FillRectangle(new SolidBrush(Color.ForestGreen), i * maxWidth, maxHeight - elements[i], maxWidth, elements[i]);
+                graphics.FillRectangle(new SolidBrush(Color.FromArgb(83, 153, 182)), i * maxWidth, maxHeight - elements[i], maxWidth, elements[i]);
                 Thread.Sleep(threadDelay);
             }
         }

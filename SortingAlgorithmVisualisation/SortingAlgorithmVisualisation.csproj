@@ -56,8 +56,14 @@
     <Compile Include="Algorithms\RadixSort.cs" />
     <Compile Include="Algorithms\SelectionSort.cs" />
     <Compile Include="Formatting\ChangeRectangles.cs" />
-    <Compile Include="Formatting\DisplayData.cs" />
+    <Compile Include="Formatting\DataGeneration.cs" />
     <Compile Include="Formatting\FormattingDisplay.cs" />
+    <Compile Include="Forms\ComplexityPopUpForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ComplexityPopUpForm.Designer.cs">
+      <DependentUpon>ComplexityPopUpForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\DisplaySort.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -72,6 +78,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Forms\ComplexityPopUpForm.resx">
+      <DependentUpon>ComplexityPopUpForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\DisplaySort.resx">
       <DependentUpon>DisplaySort.cs</DependentUpon>
     </EmbeddedResource>
@@ -86,6 +95,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -100,6 +110,11 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <None Include="Resources\InfoIcon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TimeComplexityChart.jpeg" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -10,6 +10,8 @@ namespace SortingAlgorithmVisualisation.Algorithms
 {
     public abstract class AlgorithmBase
     {
+        public string timeComplexity;
+        public string spaceComplexity;
         public abstract int elementCount { get; set; }
 
         public abstract void BeginAlgorithm(Graphics graphics, int maxWidth, int maxHeight, int[] elements, int threadDelay);

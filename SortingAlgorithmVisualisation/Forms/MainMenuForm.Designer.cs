@@ -49,21 +49,31 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.githubLinkLabel = new System.Windows.Forms.LinkLabel();
-            this.BackgroundDrawWorker = new System.ComponentModel.BackgroundWorker();
-            this.label2 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
+            this.infoPictureBox = new System.Windows.Forms.PictureBox();
+            this.label4 = new System.Windows.Forms.Label();
+            this.checkBox2 = new System.Windows.Forms.CheckBox();
+            this.checkBox3 = new System.Windows.Forms.CheckBox();
+            this.checkBox4 = new System.Windows.Forms.CheckBox();
+            this.checkBox5 = new System.Windows.Forms.CheckBox();
+            this.checkBox6 = new System.Windows.Forms.CheckBox();
+            this.checkBox7 = new System.Windows.Forms.CheckBox();
+            this.checkBox8 = new System.Windows.Forms.CheckBox();
+            this.checkBox1 = new System.Windows.Forms.CheckBox();
             ((System.ComponentModel.ISupportInitialize)(this.sizeTrackBar)).BeginInit();
             this.AlgorithmGroupBox.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.infoPictureBox)).BeginInit();
             this.SuspendLayout();
             // 
             // button1
             // 
             this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(83)))), ((int)(((byte)(153)))), ((int)(((byte)(182)))));
+            this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button1.Font = new System.Drawing.Font("Century Gothic", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(594, 187);
+            this.button1.Location = new System.Drawing.Point(586, 142);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(256, 117);
+            this.button1.Size = new System.Drawing.Size(264, 117);
             this.button1.TabIndex = 0;
             this.button1.Text = "Sort!";
             this.button1.UseVisualStyleBackColor = false;
@@ -74,6 +84,7 @@
             this.radioButton1.AccessibleName = "Bubble Sort";
             this.radioButton1.AutoSize = true;
             this.radioButton1.Checked = true;
+            this.radioButton1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.radioButton1.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.radioButton1.Location = new System.Drawing.Point(6, 60);
             this.radioButton1.Name = "radioButton1";
@@ -88,6 +99,7 @@
             // 
             this.radioButton2.AccessibleName = "Merge Sort";
             this.radioButton2.AutoSize = true;
+            this.radioButton2.Cursor = System.Windows.Forms.Cursors.Hand;
             this.radioButton2.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.radioButton2.Location = new System.Drawing.Point(6, 110);
             this.radioButton2.Name = "radioButton2";
@@ -101,6 +113,7 @@
             // 
             this.radioButton3.AccessibleName = "Insertion Sort";
             this.radioButton3.AutoSize = true;
+            this.radioButton3.Cursor = System.Windows.Forms.Cursors.Hand;
             this.radioButton3.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.radioButton3.Location = new System.Drawing.Point(6, 160);
             this.radioButton3.Name = "radioButton3";
@@ -127,6 +140,7 @@
             // 
             this.radioButton5.AccessibleName = "Heap Sort";
             this.radioButton5.AutoSize = true;
+            this.radioButton5.Cursor = System.Windows.Forms.Cursors.Hand;
             this.radioButton5.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.radioButton5.Location = new System.Drawing.Point(6, 210);
             this.radioButton5.Name = "radioButton5";
@@ -140,6 +154,7 @@
             // 
             this.radioButton6.AccessibleName = "Bogo Sort";
             this.radioButton6.AutoSize = true;
+            this.radioButton6.Cursor = System.Windows.Forms.Cursors.Hand;
             this.radioButton6.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.radioButton6.Location = new System.Drawing.Point(6, 260);
             this.radioButton6.Name = "radioButton6";
@@ -153,6 +168,7 @@
             // 
             this.radioButton7.AccessibleName = "Selection Sort";
             this.radioButton7.AutoSize = true;
+            this.radioButton7.Cursor = System.Windows.Forms.Cursors.Hand;
             this.radioButton7.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.radioButton7.Location = new System.Drawing.Point(6, 360);
             this.radioButton7.Name = "radioButton7";
@@ -166,6 +182,7 @@
             // 
             this.radioButton9.AccessibleName = "Radix Sort";
             this.radioButton9.AutoSize = true;
+            this.radioButton9.Cursor = System.Windows.Forms.Cursors.Hand;
             this.radioButton9.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.radioButton9.Location = new System.Drawing.Point(6, 410);
             this.radioButton9.Name = "radioButton9";
@@ -179,6 +196,7 @@
             // 
             this.radioButton10.AccessibleName = "Cocktail Sort";
             this.radioButton10.AutoSize = true;
+            this.radioButton10.Cursor = System.Windows.Forms.Cursors.Hand;
             this.radioButton10.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.radioButton10.Location = new System.Drawing.Point(6, 310);
             this.radioButton10.Name = "radioButton10";
@@ -190,8 +208,9 @@
             // 
             // sizeTrackBar
             // 
+            this.sizeTrackBar.Cursor = System.Windows.Forms.Cursors.SizeWE;
             this.sizeTrackBar.LargeChange = 1;
-            this.sizeTrackBar.Location = new System.Drawing.Point(372, 226);
+            this.sizeTrackBar.Location = new System.Drawing.Point(372, 181);
             this.sizeTrackBar.Maximum = 5;
             this.sizeTrackBar.Name = "sizeTrackBar";
             this.sizeTrackBar.Size = new System.Drawing.Size(181, 45);
@@ -202,9 +221,10 @@
             // originalTimeBox
             // 
             this.originalTimeBox.AutoSize = true;
+            this.originalTimeBox.Cursor = System.Windows.Forms.Cursors.Hand;
             this.originalTimeBox.Font = new System.Drawing.Font("Segoe UI Semibold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.originalTimeBox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(83)))), ((int)(((byte)(153)))), ((int)(((byte)(182)))));
-            this.originalTimeBox.Location = new System.Drawing.Point(380, 276);
+            this.originalTimeBox.Location = new System.Drawing.Point(380, 231);
             this.originalTimeBox.Name = "originalTimeBox";
             this.originalTimeBox.Size = new System.Drawing.Size(181, 29);
             this.originalTimeBox.TabIndex = 13;
@@ -250,6 +270,7 @@
             // 
             this.radioButton11.AccessibleName = "Quick Sort";
             this.radioButton11.AutoSize = true;
+            this.radioButton11.Cursor = System.Windows.Forms.Cursors.Hand;
             this.radioButton11.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.radioButton11.Location = new System.Drawing.Point(185, 60);
             this.radioButton11.Name = "radioButton11";
@@ -281,7 +302,7 @@
             this.label1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.label1.Font = new System.Drawing.Font("Segoe UI Semibold", 15.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(83)))), ((int)(((byte)(153)))), ((int)(((byte)(182)))));
-            this.label1.Location = new System.Drawing.Point(375, 187);
+            this.label1.Location = new System.Drawing.Point(375, 142);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(178, 36);
             this.label1.TabIndex = 18;
@@ -316,40 +337,180 @@
             this.githubLinkLabel.Text = "https://github.com/nathanjukes/Sorting-Algorithm-Visualisation";
             this.githubLinkLabel.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.GithubLinkLabel_LinkClicked);
             // 
-            // label2
-            // 
-            this.label2.BackColor = System.Drawing.Color.Transparent;
-            this.label2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.label2.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(83)))), ((int)(((byte)(153)))), ((int)(((byte)(182)))));
-            this.label2.Location = new System.Drawing.Point(359, 322);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(497, 73);
-            this.label2.TabIndex = 22;
-            this.label2.Text = "Please Note: Within the \'Bogo Sort\', the light blue colouring is used for display" +
-    "ing the original set of elements before the new sort is shown.\r\n\r\n\r\n";
-            this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
             // label5
             // 
             this.label5.BackColor = System.Drawing.Color.Transparent;
             this.label5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.label5.Font = new System.Drawing.Font("Segoe UI Semibold", 21.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(83)))), ((int)(((byte)(153)))), ((int)(((byte)(182)))));
-            this.label5.Location = new System.Drawing.Point(365, 9);
+            this.label5.Location = new System.Drawing.Point(331, 9);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(540, 115);
             this.label5.TabIndex = 24;
             this.label5.Text = "Nathan Jukes\' \r\nSorting Algorithm Visualisation Tool\r\n";
+            // 
+            // infoPictureBox
+            // 
+            this.infoPictureBox.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.infoPictureBox.Image = global::SortingAlgorithmVisualisation.Properties.Resources.InfoIcon_png;
+            this.infoPictureBox.Location = new System.Drawing.Point(791, 5);
+            this.infoPictureBox.Name = "infoPictureBox";
+            this.infoPictureBox.Size = new System.Drawing.Size(88, 46);
+            this.infoPictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.infoPictureBox.TabIndex = 25;
+            this.infoPictureBox.TabStop = false;
+            this.infoPictureBox.MouseEnter += new System.EventHandler(this.infoPictureBox_MouseEnter);
+            this.infoPictureBox.MouseLeave += new System.EventHandler(this.infoPictureBox_MouseLeave);
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Segoe UI Semibold", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(83)))), ((int)(((byte)(153)))), ((int)(((byte)(182)))));
+            this.label4.Location = new System.Drawing.Point(374, 290);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(165, 32);
+            this.label4.TabIndex = 28;
+            this.label4.Text = "Array Setting:";
+            // 
+            // checkBox2
+            // 
+            this.checkBox2.AccessibleDescription = "SortSetting";
+            this.checkBox2.AutoSize = true;
+            this.checkBox2.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.checkBox2.Font = new System.Drawing.Font("Segoe UI Semibold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBox2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(83)))), ((int)(((byte)(153)))), ((int)(((byte)(182)))));
+            this.checkBox2.Location = new System.Drawing.Point(551, 332);
+            this.checkBox2.Name = "checkBox2";
+            this.checkBox2.Size = new System.Drawing.Size(123, 29);
+            this.checkBox2.TabIndex = 29;
+            this.checkBox2.Text = "Small Only";
+            this.checkBox2.UseVisualStyleBackColor = true;
+            this.checkBox2.CheckedChanged += new System.EventHandler(this.CheckBox_CheckedChanged);
+            // 
+            // checkBox3
+            // 
+            this.checkBox3.AccessibleDescription = "SortSetting";
+            this.checkBox3.AutoSize = true;
+            this.checkBox3.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.checkBox3.Font = new System.Drawing.Font("Segoe UI Semibold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBox3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(83)))), ((int)(((byte)(153)))), ((int)(((byte)(182)))));
+            this.checkBox3.Location = new System.Drawing.Point(551, 399);
+            this.checkBox3.Name = "checkBox3";
+            this.checkBox3.Size = new System.Drawing.Size(123, 29);
+            this.checkBox3.TabIndex = 30;
+            this.checkBox3.Text = "Large Only";
+            this.checkBox3.UseVisualStyleBackColor = true;
+            this.checkBox3.CheckedChanged += new System.EventHandler(this.CheckBox_CheckedChanged);
+            // 
+            // checkBox4
+            // 
+            this.checkBox4.AccessibleDescription = "SortSetting";
+            this.checkBox4.AutoSize = true;
+            this.checkBox4.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.checkBox4.Font = new System.Drawing.Font("Segoe UI Semibold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBox4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(83)))), ((int)(((byte)(153)))), ((int)(((byte)(182)))));
+            this.checkBox4.Location = new System.Drawing.Point(551, 364);
+            this.checkBox4.Name = "checkBox4";
+            this.checkBox4.Size = new System.Drawing.Size(148, 29);
+            this.checkBox4.TabIndex = 31;
+            this.checkBox4.Text = "Medium Only";
+            this.checkBox4.UseVisualStyleBackColor = true;
+            this.checkBox4.CheckedChanged += new System.EventHandler(this.CheckBox_CheckedChanged);
+            // 
+            // checkBox5
+            // 
+            this.checkBox5.AccessibleDescription = "SortSetting";
+            this.checkBox5.AutoSize = true;
+            this.checkBox5.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.checkBox5.Font = new System.Drawing.Font("Segoe UI Semibold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBox5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(83)))), ((int)(((byte)(153)))), ((int)(((byte)(182)))));
+            this.checkBox5.Location = new System.Drawing.Point(700, 364);
+            this.checkBox5.Name = "checkBox5";
+            this.checkBox5.Size = new System.Drawing.Size(137, 29);
+            this.checkBox5.TabIndex = 32;
+            this.checkBox5.Text = "Small Range";
+            this.checkBox5.UseVisualStyleBackColor = true;
+            this.checkBox5.CheckedChanged += new System.EventHandler(this.CheckBox_CheckedChanged);
+            // 
+            // checkBox6
+            // 
+            this.checkBox6.AccessibleDescription = "SortSetting";
+            this.checkBox6.AutoSize = true;
+            this.checkBox6.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.checkBox6.Font = new System.Drawing.Font("Segoe UI Semibold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBox6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(83)))), ((int)(((byte)(153)))), ((int)(((byte)(182)))));
+            this.checkBox6.Location = new System.Drawing.Point(700, 332);
+            this.checkBox6.Name = "checkBox6";
+            this.checkBox6.Size = new System.Drawing.Size(108, 29);
+            this.checkBox6.TabIndex = 33;
+            this.checkBox6.Text = "Reversed";
+            this.checkBox6.UseVisualStyleBackColor = true;
+            this.checkBox6.CheckedChanged += new System.EventHandler(this.CheckBox_CheckedChanged);
+            // 
+            // checkBox7
+            // 
+            this.checkBox7.AccessibleDescription = "SortSetting";
+            this.checkBox7.AutoSize = true;
+            this.checkBox7.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.checkBox7.Font = new System.Drawing.Font("Segoe UI Semibold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBox7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(83)))), ((int)(((byte)(153)))), ((int)(((byte)(182)))));
+            this.checkBox7.Location = new System.Drawing.Point(700, 297);
+            this.checkBox7.Name = "checkBox7";
+            this.checkBox7.Size = new System.Drawing.Size(131, 29);
+            this.checkBox7.TabIndex = 34;
+            this.checkBox7.Text = "Few Unique";
+            this.checkBox7.UseVisualStyleBackColor = true;
+            this.checkBox7.CheckedChanged += new System.EventHandler(this.CheckBox_CheckedChanged);
+            // 
+            // checkBox8
+            // 
+            this.checkBox8.AccessibleDescription = "SortSetting";
+            this.checkBox8.AutoSize = true;
+            this.checkBox8.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.checkBox8.Font = new System.Drawing.Font("Segoe UI Semibold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBox8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(83)))), ((int)(((byte)(153)))), ((int)(((byte)(182)))));
+            this.checkBox8.Location = new System.Drawing.Point(700, 399);
+            this.checkBox8.Name = "checkBox8";
+            this.checkBox8.Size = new System.Drawing.Size(169, 29);
+            this.checkBox8.TabIndex = 35;
+            this.checkBox8.Text = "Mirrored Halves";
+            this.checkBox8.UseVisualStyleBackColor = true;
+            this.checkBox8.CheckedChanged += new System.EventHandler(this.CheckBox_CheckedChanged);
+            // 
+            // checkBox1
+            // 
+            this.checkBox1.AccessibleDescription = "SortSetting";
+            this.checkBox1.AutoSize = true;
+            this.checkBox1.Checked = true;
+            this.checkBox1.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.checkBox1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.checkBox1.Font = new System.Drawing.Font("Segoe UI Semibold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(83)))), ((int)(((byte)(153)))), ((int)(((byte)(182)))));
+            this.checkBox1.Location = new System.Drawing.Point(551, 297);
+            this.checkBox1.Name = "checkBox1";
+            this.checkBox1.Size = new System.Drawing.Size(107, 29);
+            this.checkBox1.TabIndex = 26;
+            this.checkBox1.Text = "Standard";
+            this.checkBox1.UseVisualStyleBackColor = true;
+            this.checkBox1.CheckedChanged += new System.EventHandler(this.CheckBox_CheckedChanged);
             // 
             // MainMenuForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(56)))), ((int)(((byte)(58)))));
-            this.ClientSize = new System.Drawing.Size(862, 518);
-            this.Controls.Add(this.label5);
-            this.Controls.Add(this.label2);
+            this.ClientSize = new System.Drawing.Size(864, 515);
+            this.Controls.Add(this.checkBox8);
+            this.Controls.Add(this.checkBox7);
+            this.Controls.Add(this.checkBox6);
+            this.Controls.Add(this.checkBox5);
+            this.Controls.Add(this.checkBox4);
+            this.Controls.Add(this.checkBox3);
+            this.Controls.Add(this.checkBox2);
+            this.Controls.Add(this.label4);
+            this.Controls.Add(this.checkBox1);
+            this.Controls.Add(this.infoPictureBox);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.selectedAlgorithmLabel);
@@ -359,6 +520,7 @@
             this.Controls.Add(this.button1);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.githubLinkLabel);
+            this.Controls.Add(this.label5);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
@@ -369,6 +531,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.sizeTrackBar)).EndInit();
             this.AlgorithmGroupBox.ResumeLayout(false);
             this.AlgorithmGroupBox.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.infoPictureBox)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -396,9 +559,17 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.LinkLabel githubLinkLabel;
         private System.Windows.Forms.RadioButton radioButton11;
-        private System.ComponentModel.BackgroundWorker BackgroundDrawWorker;
-        private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.PictureBox infoPictureBox;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.CheckBox checkBox2;
+        private System.Windows.Forms.CheckBox checkBox3;
+        private System.Windows.Forms.CheckBox checkBox4;
+        private System.Windows.Forms.CheckBox checkBox5;
+        private System.Windows.Forms.CheckBox checkBox6;
+        private System.Windows.Forms.CheckBox checkBox7;
+        private System.Windows.Forms.CheckBox checkBox8;
+        private System.Windows.Forms.CheckBox checkBox1;
     }
 }
 
