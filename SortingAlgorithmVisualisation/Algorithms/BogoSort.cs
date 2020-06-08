@@ -12,17 +12,11 @@ namespace SortingAlgorithmVisualisation.Algorithms
     {
         public override int elementCount { get; set; }
 
-        private Graphics graphics;
-        private int maxWidth;
-        private int maxHeight;
-        private int threadDelay;
         private int[] elementsCopy;
-        public override void BeginAlgorithm(Graphics _graphics, int _maxWidth, int _maxHeight, int[] elements, int _threadDelay)
+        public override void BeginAlgorithm(int[] elements)
         {
-            graphics = _graphics;
-            maxWidth = _maxWidth;
-            maxHeight = _maxHeight;
-            threadDelay = _threadDelay;
+            elementCount = elements.Length;
+
             elementsCopy = (int[])elements.Clone();
 
             StartBogoSort(elements);
@@ -37,9 +31,9 @@ namespace SortingAlgorithmVisualisation.Algorithms
                 HashSet<int> newIndex = new HashSet<int>();
                 int indexCount = 0;
 
-                while (newIndex.Count != elements.Length)
+                while (newIndex.Count != elementCount)
                 {
-                    newIndex.Add(rnd.Next(0, elements.Length));
+                    newIndex.Add(rnd.Next(0, elementCount));
                 }
 
                 foreach (var i in newIndex)
@@ -49,7 +43,7 @@ namespace SortingAlgorithmVisualisation.Algorithms
                     indexCount++;
                 }
 
-                for (int i = 0; i < elements.Length; i++)
+                for (int i = 0; i < elementCount; i++)
                 {
                     graphics.FillRectangle(new SolidBrush(SystemColors.ActiveBorder), i * maxWidth, maxHeight - elementsCopy[i], maxWidth, elementsCopy[i]);
                     graphics.FillRectangle(new SolidBrush(Color.Black), i * maxWidth, maxHeight - elements[i], maxWidth, elements[i]);
@@ -59,6 +53,7 @@ namespace SortingAlgorithmVisualisation.Algorithms
 
                 if (CheckIfSorted(elements))
                 {
+                    DisplaySort.SortComplete = true;
                     ShowCompletedDisplay(graphics, maxWidth, maxHeight, elements, threadDelay);
                     break;
                 }
@@ -74,7 +69,7 @@ namespace SortingAlgorithmVisualisation.Algorithms
 
         private void ClearDisplay(int[] originalElements, int[] elements)
         {
-            for(int i = 0; i < elements.Length; i++)
+            for(int i = 0; i < elementCount; i++)
             {
                 graphics.FillRectangle(new SolidBrush(SystemColors.ActiveBorder), i * maxWidth, maxHeight - elements[i], maxWidth, elements[i]);;
                 graphics.FillRectangle(new SolidBrush(Color.FromArgb(83, 153, 182)), i * maxWidth, maxHeight - elementsCopy[i], maxWidth, elementsCopy[i]);
@@ -82,7 +77,7 @@ namespace SortingAlgorithmVisualisation.Algorithms
         }
         private void ShowIncorrectSort(int[] elements)
         {
-            for (int i = 0; i < elements.Length; i++)
+            for (int i = 0; i < elementCount; i++)
             {
                 graphics.FillRectangle(new SolidBrush(Color.DarkRed), i * maxWidth, maxHeight - elements[i], maxWidth, elements[i]);
             }
@@ -90,7 +85,7 @@ namespace SortingAlgorithmVisualisation.Algorithms
 
         private bool CheckIfSorted(int[] elements)
         {
-            for(int i = 0; i < elements.Length - 1; i++)
+            for(int i = 0; i < elementCount - 1; i++)
             {
                 if(elements[i] > elements[i + 1])
                 {

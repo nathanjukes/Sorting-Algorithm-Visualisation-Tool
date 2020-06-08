@@ -14,25 +14,17 @@ namespace SortingAlgorithmVisualisation.Algorithms
     {
         public override int elementCount { get; set; }
 
-        private Graphics graphics;
-        private int maxWidth;
-        private int maxHeight;
-        private int threadDelay;
-
         private int leftOffset = 1;
         private int rightOffset = 2;
         private int sortedLength;
 
-        public override void BeginAlgorithm(Graphics _graphics, int _maxWidth, int _maxHeight, int[] elements, int _threadDelay)
+        public override void BeginAlgorithm(int[] elements)
         {
-            graphics = _graphics;
-            maxWidth = _maxWidth;
-            maxHeight = _maxHeight;
-            threadDelay = _threadDelay;
+            elementCount = elements.Length;
 
-            sortedLength = elements.Length;
+            sortedLength = elementCount;
 
-            if (elements.Length % 2 == 0)
+            if (elementCount % 2 == 0)
             {
                 leftOffset--;
                 rightOffset--;
@@ -42,6 +34,8 @@ namespace SortingAlgorithmVisualisation.Algorithms
 
             DeleteElements(elements);
 
+            DisplaySort.SortComplete = true;
+
             ShowCompletedDisplay(graphics, maxWidth, maxHeight, elements, threadDelay);
         }
 
@@ -49,7 +43,7 @@ namespace SortingAlgorithmVisualisation.Algorithms
         {
             for(int i = 0; i < 2; i++)
             {
-                for (int j = (elements.Length / 2) - 1; j >= 0; j--)
+                for (int j = (elementCount / 2) - 1; j >= 0; j--)
                 {
                     int? highestIndex = null;
                     int leftIndex = (j * 2) + leftOffset;
@@ -69,7 +63,7 @@ namespace SortingAlgorithmVisualisation.Algorithms
                     {
                         if (elements[Convert.ToInt32(highestIndex)] > elements[j])
                         {
-                            SwapElements(j, Convert.ToInt32(highestIndex), elements);
+                            SwapElements(j, Convert.ToInt32(highestIndex), elements, 2);
                         }
                     }
                 }
@@ -78,9 +72,9 @@ namespace SortingAlgorithmVisualisation.Algorithms
 
         private void DeleteElements(int[] elements)
         {
-            for (int i = elements.Length - 1; i >= 0; i--)
+            for (int i = elementCount - 1; i >= 0; i--)
             {
-                SwapElements(0, i, elements);
+                SwapElements(0, i, elements, 2);
 
                 sortedLength--;
 
@@ -89,25 +83,8 @@ namespace SortingAlgorithmVisualisation.Algorithms
 
             if (elements[0] > elements[1])
             {
-                SwapElements(0, 1, elements);
+                SwapElements(0, 1, elements, 2);
             }
-        }
-
-        private void SwapElements(int index1, int index2, int[] elements)
-        {
-            graphics.FillRectangle(new SolidBrush(SystemColors.ActiveBorder), index1 * maxWidth, maxHeight - elements[index1], maxWidth, elements[index1]);
-            graphics.FillRectangle(new SolidBrush(SystemColors.ActiveBorder), index2 * maxWidth, maxHeight - elements[index2], maxWidth, elements[index2]);
-
-            int tempValue = elements[index1];
-            elements[index1] = elements[index2];
-            elements[index2] = tempValue;
-
-            graphics.FillRectangle(new SolidBrush(Color.Black), index1 * maxWidth, maxHeight - elements[index1], maxWidth, elements[index1]);
-            graphics.FillRectangle(new SolidBrush(Color.DarkRed), index2 * maxWidth, maxHeight - elements[index2], maxWidth, elements[index2]);
-
-            Thread.Sleep(threadDelay);
-
-            graphics.FillRectangle(new SolidBrush(Color.Black), index2 * maxWidth, maxHeight - elements[index2], maxWidth, elements[index2]);
         }
     }
 }

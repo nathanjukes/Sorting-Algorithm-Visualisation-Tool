@@ -11,6 +11,7 @@ using System.Windows.Forms;
 using System.Diagnostics;
 using SortingAlgorithmVisualisation.Algorithms;
 using SortingAlgorithmVisualisation.Formatting;
+using System.CodeDom;
 
 namespace SortingAlgorithmVisualisation
 {
@@ -24,7 +25,6 @@ namespace SortingAlgorithmVisualisation
         private string setModifier;
 
         private AlgorithmBase algorithm;
-        private Random rnd = new Random();
 
         public DisplaySort(int _elementCount, int _threadDelay, AlgorithmBase _algorithm, string _setModifier)
         {
@@ -33,14 +33,28 @@ namespace SortingAlgorithmVisualisation
             elementCount = _elementCount;
             threadDelay = _threadDelay;
             algorithm = _algorithm;
-            setModifier = _setModifier.Replace(" ", "").ToLower(); ;
+            setModifier = _setModifier.Replace(" ", "").ToLower();
 
             //Setting form components to their proper title
+            string algorithmName = algorithm.GetType().Name;
             tComplexityLabel.Text += algorithm.timeComplexity;
             sComplexityLabel.Text += algorithm.spaceComplexity;
-            secondDelay.Text += threadDelay + "ms";
-            algorithmLabel.Text += $"{algorithm.GetType().Name} ({elementCount} values)";
+            algorithmLabel.Text += $"{algorithmName} ({elementCount} values)";
             arraySettingLabel.Text += _setModifier;
+
+            if (algorithmName.Contains("Heap") || algorithmName.Contains("Selection"))
+            {
+                secondDelay.Text += threadDelay * 2 + "ms";
+            }
+            else if (algorithmName.Contains("Radix"))
+            {
+                secondDelay.Text += threadDelay + 700 + "ms";
+            }
+            else
+            {
+                secondDelay.Text += threadDelay + "ms";
+            }
+
             //Add sounds
         }
 
@@ -52,18 +66,23 @@ namespace SortingAlgorithmVisualisation
             int maxHeight = algorithmPanel.Height; //Max Height of the panel
 
             elements = DataGeneration.GetData(maxHeight, elementCount, setModifier);
-            
+
             for (int i = 0; i < elementCount; i++)
             {
                 graphics.FillRectangle(new SolidBrush(Color.Black), i * maxWidth, maxHeight - elements[i], maxWidth, elements[i]);
             }
+
+            algorithm.maxWidth = maxWidth;
+            algorithm.maxHeight = maxHeight;
+            algorithm.graphics = graphics;
+
             Thread.Sleep(500);
             Task beginSort = Task.Run(() => BeginSorting(graphics, maxWidth, maxHeight, elements));
         }
 
         private void BeginSorting(Graphics graphics, int maxWidth, int maxHeight, int[] elements)
         {
-            algorithm.BeginAlgorithm(graphics, maxWidth, maxHeight, elements, threadDelay);
+            algorithm.BeginAlgorithm(elements);
         }
 
         private void DisplaySort_FormClosed(object sender, FormClosedEventArgs e)

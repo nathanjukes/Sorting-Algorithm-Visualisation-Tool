@@ -12,23 +12,18 @@ namespace SortingAlgorithmVisualisation.Algorithms
     class MergeSort : AlgorithmBase
     {
         public override int elementCount { get; set; }
-        private Graphics graphics;
-        private int maxWidth;
-        private int maxHeight;
-        private int threadDelay;
+
         private int offset;
         private int qCount = 0;
-        public override void BeginAlgorithm(Graphics _graphics, int _maxWidth, int _maxHeight, int[] elements, int _threadDelay)
+        public override void BeginAlgorithm(int[] elements)
         {
-            graphics = _graphics;
-            maxWidth = _maxWidth;
-            maxHeight = _maxHeight;
-            threadDelay = _threadDelay;
             elementCount = elements.Length;
             
             SplitArray(elements);
 
             Thread.Sleep(200);
+
+            DisplaySort.SortComplete = true;
 
             ShowCompletedDisplay(graphics, maxWidth, maxHeight, elements, threadDelay);
         }

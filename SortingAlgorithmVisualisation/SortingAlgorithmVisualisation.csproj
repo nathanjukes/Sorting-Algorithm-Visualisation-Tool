@@ -55,7 +55,6 @@
     <Compile Include="Algorithms\QuickSort.cs" />
     <Compile Include="Algorithms\RadixSort.cs" />
     <Compile Include="Algorithms\SelectionSort.cs" />
-    <Compile Include="Formatting\ChangeRectangles.cs" />
     <Compile Include="Formatting\DataGeneration.cs" />
     <Compile Include="Formatting\FormattingDisplay.cs" />
     <Compile Include="Forms\ComplexityPopUpForm.cs">

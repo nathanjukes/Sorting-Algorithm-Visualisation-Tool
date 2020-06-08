@@ -12,20 +12,13 @@ namespace SortingAlgorithmVisualisation.Algorithms
     {
         public override int elementCount { get; set; }
 
-        private Graphics graphics;
-        private int maxWidth;
-        private int maxHeight;
-        private int threadDelay;
-        public override void BeginAlgorithm(Graphics _graphics, int _maxWidth, int _maxHeight, int[] elements, int _threadDelay)
+        public override void BeginAlgorithm(int[] elements)
         {
-            graphics = _graphics;
-            maxWidth = _maxWidth;
-            maxHeight = _maxHeight;
-            threadDelay = _threadDelay;
-
-            QuickSortStart(elements, 0, elements.Length - 1);
+            elementCount = elements.Length;
+            QuickSortStart(elements, 0, elementCount - 1);
 
             DisplaySort.SortComplete = true;
+
             ShowCompletedDisplay(graphics, maxWidth, maxHeight, elements, threadDelay);
         }
 
@@ -53,31 +46,13 @@ namespace SortingAlgorithmVisualisation.Algorithms
             {
                 if(elements[i] < pivotValue)
                 {
-                    SwapElements(elements, i, pivotIndex);
+                    SwapElements(i, pivotIndex, elements, 3);
                     pivotIndex++;
                 }
             }
-            SwapElements(elements, pivotIndex, endIndex);
+            SwapElements(pivotIndex, endIndex, elements, 3);
 
             return pivotIndex;
-        }
-
-        private void SwapElements(int[] elements, int index1, int index2)
-        {
-            graphics.FillRectangle(new SolidBrush(Color.DarkRed), index1 * maxWidth, maxHeight - elements[index1], maxWidth, elements[index1]);
-            graphics.FillRectangle(new SolidBrush(Color.DarkRed), index2 * maxWidth, maxHeight - elements[index2], maxWidth, elements[index2]);
-           
-            Thread.Sleep(threadDelay);
-
-            graphics.FillRectangle(new SolidBrush(SystemColors.ActiveBorder), index1 * maxWidth, maxHeight - elements[index1], maxWidth, elements[index1]);
-            graphics.FillRectangle(new SolidBrush(SystemColors.ActiveBorder), index2 * maxWidth, maxHeight - elements[index2], maxWidth, elements[index2]);
-
-            int tempValue = elements[index1]; //Swaps the elements
-            elements[index1] = elements[index2];
-            elements[index2] = tempValue;
-
-            graphics.FillRectangle(new SolidBrush(Color.Black), index1 * maxWidth, maxHeight - elements[index1], maxWidth, elements[index1]);
-            graphics.FillRectangle(new SolidBrush(Color.Black), index2 * maxWidth, maxHeight - elements[index2], maxWidth, elements[index2]);
         }
     }
 }

@@ -46,6 +46,8 @@ namespace SortingAlgorithmVisualisation
                     }
                 }
 
+                algorithm.threadDelay = threadDelay;
+
                 string setModifier = GetModifier();
                 ShowDisplayForm(setModifier);
             }

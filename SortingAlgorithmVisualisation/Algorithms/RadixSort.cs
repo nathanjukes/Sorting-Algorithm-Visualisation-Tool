@@ -13,17 +13,12 @@ namespace SortingAlgorithmVisualisation.Algorithms
     {
         public override int elementCount { get; set; }
 
-        private Graphics graphics;
-        private int maxWidth;
-        private int maxHeight;
-        private int threadDelay;
         private string[] elementDuplicates;
-        public override void BeginAlgorithm(Graphics _graphics, int _maxWidth, int _maxHeight, int[] elements, int _threadDelay)
+        public override void BeginAlgorithm(int[] elements)
         {
-            graphics = _graphics;
-            maxWidth = _maxWidth;
-            maxHeight = _maxHeight;
-            threadDelay = _threadDelay;
+            elementCount = elements.Length;
+
+            DisplaySort.SortComplete = true;
 
             StartRadixSort(elements);
         }
@@ -49,7 +44,7 @@ namespace SortingAlgorithmVisualisation.Algorithms
         {
             elementDuplicates = new string[10];
 
-            for (int i = 0; i < elements.Length; i++)
+            for (int i = 0; i < elementCount; i++)
             {
                 string currentElement = elements[i].ToString();
 
@@ -86,11 +81,10 @@ namespace SortingAlgorithmVisualisation.Algorithms
 
         private void ClearDisplay(int[] elements)
         {
-            for(int i = 0; i < elements.Length; i++)
+            for(int i = 0; i < elementCount; i++)
             {
                 graphics.FillRectangle(new SolidBrush(SystemColors.ActiveBorder), i * maxWidth, 0, maxWidth, maxHeight);
             }
-            Thread.Sleep(10);
         }
 
         private void ReDrawDisplay(int[] elements)
@@ -104,7 +98,7 @@ namespace SortingAlgorithmVisualisation.Algorithms
                 threadDelay = 1;
             }
 
-            for (int i = 0; i < elements.Length; i++)
+            for (int i = 0; i < elementCount; i++)
             {
                 graphics.FillRectangle(new SolidBrush(Color.Black), i * maxWidth, maxHeight - elements[i], maxWidth, elements[i]);
                 Thread.Sleep(threadDelay);
