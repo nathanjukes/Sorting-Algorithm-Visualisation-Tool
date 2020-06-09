@@ -21,3 +21,7 @@ E:\coding\GitHub\Repos\AlgorithmVisualisation\SortingAlgorithmVisualisation\obj\
 E:\coding\GitHub\Repos\AlgorithmVisualisation\SortingAlgorithmVisualisation\obj\Debug\SortingAlgorithmVisualisation.exe
 E:\coding\GitHub\Repos\AlgorithmVisualisation\SortingAlgorithmVisualisation\obj\Debug\SortingAlgorithmVisualisation.pdb
 E:\coding\GitHub\Repos\AlgorithmVisualisation\SortingAlgorithmVisualisation\obj\Debug\SortingAlgorithmVisualisation.Forms.ComplexityPopUpForm.resources
+E:\coding\GitHub\Repos\AlgorithmVisualisation\SortingAlgorithmVisualisation\bin\Debug\SortingAlgorithmVisualisation.exe.manifest
+E:\coding\GitHub\Repos\AlgorithmVisualisation\SortingAlgorithmVisualisation\bin\Debug\SortingAlgorithmVisualisation.application
+E:\coding\GitHub\Repos\AlgorithmVisualisation\SortingAlgorithmVisualisation\obj\Debug\SortingAlgorithmVisualisation.exe.manifest
+E:\coding\GitHub\Repos\AlgorithmVisualisation\SortingAlgorithmVisualisation\obj\Debug\SortingAlgorithmVisualisation.application
