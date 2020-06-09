@@ -7,10 +7,12 @@ A Sorting Algorithm Visualiser made in C# Windows Forms
 ## Installation
 Head to this directory to find the application: 
 ```bash
-"C:\AlgorithmVisualisation\SortingAlgorithmVisualisation\bin\Release\SortingAlgorithmVisualisation.exe"
+"C:\AlgorithmVisualisation\SortingAlgorithmVisualisation\Publish"
 ```
 Or download here:
-{download link}
+[(64-bit)](https://github.com/nathanjukes/Sorting-Algorithm-Visualisation/raw/master/SortingAlgorithmVisualisation/bin/ApplicationDownload.zip)
+
+![alt text](https://github.com/nathanjukes/Sorting-Algorithm-Visualisation/blob/master/Assets/DisplayPicture.JPG)
 
 
 ## Usage
@@ -19,4 +21,4 @@ Simply run the application .exe, no dependencies required.
 
 
 ### License
-[MIT](https://choosealicense.com/licenses/mit/)
+[MIT](https://github.com/nathanjukes/Sorting-Algorithm-Visualisation/blob/master/LICENSE.md)
