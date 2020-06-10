@@ -60,6 +60,7 @@
             this.checkBox7 = new System.Windows.Forms.CheckBox();
             this.checkBox8 = new System.Windows.Forms.CheckBox();
             this.checkBox1 = new System.Windows.Forms.CheckBox();
+            this.radioButton8 = new System.Windows.Forms.RadioButton();
             ((System.ComponentModel.ISupportInitialize)(this.sizeTrackBar)).BeginInit();
             this.AlgorithmGroupBox.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.infoPictureBox)).BeginInit();
@@ -246,6 +247,7 @@
             // AlgorithmGroupBox
             // 
             this.AlgorithmGroupBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(83)))), ((int)(((byte)(153)))), ((int)(((byte)(182)))));
+            this.AlgorithmGroupBox.Controls.Add(this.radioButton8);
             this.AlgorithmGroupBox.Controls.Add(this.radioButton11);
             this.AlgorithmGroupBox.Controls.Add(this.panel1);
             this.AlgorithmGroupBox.Controls.Add(this.radioButton2);
@@ -495,6 +497,20 @@
             this.checkBox1.UseVisualStyleBackColor = true;
             this.checkBox1.CheckedChanged += new System.EventHandler(this.CheckBox_CheckedChanged);
             // 
+            // radioButton8
+            // 
+            this.radioButton8.AccessibleName = "Shell Sort";
+            this.radioButton8.AutoSize = true;
+            this.radioButton8.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.radioButton8.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radioButton8.Location = new System.Drawing.Point(185, 110);
+            this.radioButton8.Name = "radioButton8";
+            this.radioButton8.Size = new System.Drawing.Size(118, 28);
+            this.radioButton8.TabIndex = 19;
+            this.radioButton8.Text = "Shell Sort";
+            this.radioButton8.UseVisualStyleBackColor = true;
+            this.radioButton8.CheckedChanged += new System.EventHandler(this.RadioButton_CheckedChanged);
+            // 
             // MainMenuForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -570,6 +586,7 @@
         private System.Windows.Forms.CheckBox checkBox7;
         private System.Windows.Forms.CheckBox checkBox8;
         private System.Windows.Forms.CheckBox checkBox1;
+        private System.Windows.Forms.RadioButton radioButton8;
     }
 }
 

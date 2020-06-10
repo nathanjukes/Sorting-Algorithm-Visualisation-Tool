@@ -17,9 +17,9 @@ namespace SortingAlgorithmVisualisation.Algorithms
         {
             elementCount = elements.Length;
 
-            DisplaySort.SortComplete = true;
-
             Sort(elements, graphics, maxWidth, maxHeight);
+
+            DisplaySort.SortComplete = true;
         }
 
         private void Sort(int[] elements, Graphics graphics, int maxWidth, int maxHeight)

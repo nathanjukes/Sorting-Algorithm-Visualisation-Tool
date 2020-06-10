@@ -124,6 +124,11 @@ namespace SortingAlgorithmVisualisation
                     algorithm.timeComplexity = "O(nk)";
                     algorithm.spaceComplexity = "O(n+k)";
                     break;
+                case "Shell Sort":
+                    algorithm = new ShellSort();
+                    algorithm.timeComplexity = ("O(n²)");
+                    algorithm.spaceComplexity = ("O(1)");
+                    break;
                 case null:
                     MessageBox.Show("Please select an algorithm","Error");
                     return false;
