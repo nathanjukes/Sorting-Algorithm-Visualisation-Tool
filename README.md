@@ -21,6 +21,8 @@ Or download here:
 
 1.01 - Added Shell Sort
 
+1.00 - Released 09/06/20
+
 
 ## Usage
 
