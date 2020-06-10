@@ -19,6 +19,8 @@ Or download here:
 
 ## Change Log
 
+1.02 - Added Comb Sort
+
 1.01 - Added Shell Sort
 
 1.00 - Released 09/06/20

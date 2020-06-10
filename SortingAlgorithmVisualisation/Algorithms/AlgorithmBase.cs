@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using System.Threading;
 using System.Drawing;
 using SortingAlgorithmVisualisation.Formatting;
+using System.Windows.Forms;
 
 namespace SortingAlgorithmVisualisation.Algorithms
 {

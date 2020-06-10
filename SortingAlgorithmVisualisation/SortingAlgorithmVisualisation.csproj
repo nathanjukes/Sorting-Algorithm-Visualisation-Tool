@@ -80,6 +80,7 @@
     <Compile Include="Algorithms\BogoSort.cs" />
     <Compile Include="Algorithms\BubbleSort.cs" />
     <Compile Include="Algorithms\CocktailSort.cs" />
+    <Compile Include="Algorithms\CombSort.cs" />
     <Compile Include="Algorithms\HeapSort.cs" />
     <Compile Include="Algorithms\InsertionSort.cs" />
     <Compile Include="Algorithms\MergeSort.cs" />

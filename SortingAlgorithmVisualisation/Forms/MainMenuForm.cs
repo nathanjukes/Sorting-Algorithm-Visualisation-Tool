@@ -129,6 +129,11 @@ namespace SortingAlgorithmVisualisation
                     algorithm.timeComplexity = ("O(n²)");
                     algorithm.spaceComplexity = ("O(1)");
                     break;
+                case "Comb Sort":
+                    algorithm = new CombSort();
+                    algorithm.timeComplexity = ("O(n²)");
+                    algorithm.spaceComplexity = ("O(1)");
+                    break;
                 case null:
                     MessageBox.Show("Please select an algorithm","Error");
                     return false;
