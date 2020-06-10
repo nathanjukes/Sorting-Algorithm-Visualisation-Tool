@@ -10,7 +10,7 @@ Head to this directory to find the application:
 "C:\AlgorithmVisualisation\SortingAlgorithmVisualisation\Publish"
 ```
 Or download here:
-[(64-bit)](https://github.com/nathanjukes/Sorting-Algorithm-Visualisation/raw/master/SortingAlgorithmVisualisation/bin/ApplicationDownload.zip)
+[(64-bit)](https://github.com/nathanjukes/Sorting-Algorithm-Visualisation/raw/master/SortingAlgorithmVisualisation/bin/ApplicationDownload.zip) and run the setup.exe
 
 
 ![Homescreen Image](https://github.com/nathanjukes/Sorting-Algorithm-Visualisation/blob/master/Assets/DisplayPicture.JPG)
