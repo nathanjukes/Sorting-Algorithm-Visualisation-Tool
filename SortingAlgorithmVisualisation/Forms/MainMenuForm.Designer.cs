@@ -73,9 +73,9 @@
             this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button1.Font = new System.Drawing.Font("Century Gothic", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(586, 142);
+            this.button1.Location = new System.Drawing.Point(752, 144);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(264, 117);
+            this.button1.Size = new System.Drawing.Size(292, 117);
             this.button1.TabIndex = 0;
             this.button1.Text = "Sort!";
             this.button1.UseVisualStyleBackColor = false;
@@ -212,7 +212,7 @@
             // 
             this.sizeTrackBar.Cursor = System.Windows.Forms.Cursors.SizeWE;
             this.sizeTrackBar.LargeChange = 1;
-            this.sizeTrackBar.Location = new System.Drawing.Point(372, 181);
+            this.sizeTrackBar.Location = new System.Drawing.Point(551, 183);
             this.sizeTrackBar.Maximum = 5;
             this.sizeTrackBar.Name = "sizeTrackBar";
             this.sizeTrackBar.Size = new System.Drawing.Size(181, 45);
@@ -226,7 +226,7 @@
             this.originalTimeBox.Cursor = System.Windows.Forms.Cursors.Hand;
             this.originalTimeBox.Font = new System.Drawing.Font("Segoe UI Semibold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.originalTimeBox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(83)))), ((int)(((byte)(153)))), ((int)(((byte)(182)))));
-            this.originalTimeBox.Location = new System.Drawing.Point(380, 231);
+            this.originalTimeBox.Location = new System.Drawing.Point(559, 233);
             this.originalTimeBox.Name = "originalTimeBox";
             this.originalTimeBox.Size = new System.Drawing.Size(181, 29);
             this.originalTimeBox.TabIndex = 13;
@@ -238,9 +238,9 @@
             this.selectedAlgorithmLabel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(83)))), ((int)(((byte)(153)))), ((int)(((byte)(182)))));
             this.selectedAlgorithmLabel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.selectedAlgorithmLabel.Font = new System.Drawing.Font("Segoe UI Semibold", 15.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.selectedAlgorithmLabel.Location = new System.Drawing.Point(18, 457);
+            this.selectedAlgorithmLabel.Location = new System.Drawing.Point(18, 458);
             this.selectedAlgorithmLabel.Name = "selectedAlgorithmLabel";
-            this.selectedAlgorithmLabel.Size = new System.Drawing.Size(309, 36);
+            this.selectedAlgorithmLabel.Size = new System.Drawing.Size(466, 36);
             this.selectedAlgorithmLabel.TabIndex = 14;
             this.selectedAlgorithmLabel.Text = "Bubble Sort Selected";
             this.selectedAlgorithmLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -265,7 +265,7 @@
             this.AlgorithmGroupBox.Font = new System.Drawing.Font("Century Gothic", 18F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.AlgorithmGroupBox.Location = new System.Drawing.Point(12, 12);
             this.AlgorithmGroupBox.Name = "AlgorithmGroupBox";
-            this.AlgorithmGroupBox.Size = new System.Drawing.Size(321, 464);
+            this.AlgorithmGroupBox.Size = new System.Drawing.Size(479, 465);
             this.AlgorithmGroupBox.TabIndex = 15;
             this.AlgorithmGroupBox.TabStop = false;
             this.AlgorithmGroupBox.Text = "Algorithms ";
@@ -276,7 +276,7 @@
             this.radioButton8.AutoSize = true;
             this.radioButton8.Cursor = System.Windows.Forms.Cursors.Hand;
             this.radioButton8.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton8.Location = new System.Drawing.Point(183, 110);
+            this.radioButton8.Location = new System.Drawing.Point(304, 110);
             this.radioButton8.Name = "radioButton8";
             this.radioButton8.Size = new System.Drawing.Size(118, 28);
             this.radioButton8.TabIndex = 19;
@@ -290,7 +290,7 @@
             this.radioButton11.AutoSize = true;
             this.radioButton11.Cursor = System.Windows.Forms.Cursors.Hand;
             this.radioButton11.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton11.Location = new System.Drawing.Point(183, 60);
+            this.radioButton11.Location = new System.Drawing.Point(304, 60);
             this.radioButton11.Name = "radioButton11";
             this.radioButton11.Size = new System.Drawing.Size(130, 28);
             this.radioButton11.TabIndex = 18;
@@ -309,9 +309,9 @@
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.White;
-            this.panel2.Location = new System.Drawing.Point(17, 469);
+            this.panel2.Location = new System.Drawing.Point(17, 475);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(311, 25);
+            this.panel2.Size = new System.Drawing.Size(468, 20);
             this.panel2.TabIndex = 17;
             // 
             // label1
@@ -320,7 +320,7 @@
             this.label1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.label1.Font = new System.Drawing.Font("Segoe UI Semibold", 15.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(83)))), ((int)(((byte)(153)))), ((int)(((byte)(182)))));
-            this.label1.Location = new System.Drawing.Point(375, 142);
+            this.label1.Location = new System.Drawing.Point(554, 144);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(178, 36);
             this.label1.TabIndex = 18;
@@ -333,7 +333,7 @@
             this.label3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.label3.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(83)))), ((int)(((byte)(153)))), ((int)(((byte)(182)))));
-            this.label3.Location = new System.Drawing.Point(353, 457);
+            this.label3.Location = new System.Drawing.Point(547, 458);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(497, 36);
             this.label3.TabIndex = 20;
@@ -347,7 +347,7 @@
             this.githubLinkLabel.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.githubLinkLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(83)))), ((int)(((byte)(153)))), ((int)(((byte)(182)))));
             this.githubLinkLabel.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(83)))), ((int)(((byte)(153)))), ((int)(((byte)(182)))));
-            this.githubLinkLabel.Location = new System.Drawing.Point(376, 489);
+            this.githubLinkLabel.Location = new System.Drawing.Point(570, 490);
             this.githubLinkLabel.Name = "githubLinkLabel";
             this.githubLinkLabel.Size = new System.Drawing.Size(480, 21);
             this.githubLinkLabel.TabIndex = 21;
@@ -361,7 +361,7 @@
             this.label5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.label5.Font = new System.Drawing.Font("Segoe UI Semibold", 21.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(83)))), ((int)(((byte)(153)))), ((int)(((byte)(182)))));
-            this.label5.Location = new System.Drawing.Point(331, 9);
+            this.label5.Location = new System.Drawing.Point(517, 6);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(540, 115);
             this.label5.TabIndex = 24;
@@ -371,7 +371,7 @@
             // 
             this.infoPictureBox.Cursor = System.Windows.Forms.Cursors.Hand;
             this.infoPictureBox.Image = global::SortingAlgorithmVisualisation.Properties.Resources.InfoIcon_png;
-            this.infoPictureBox.Location = new System.Drawing.Point(791, 5);
+            this.infoPictureBox.Location = new System.Drawing.Point(998, 6);
             this.infoPictureBox.Name = "infoPictureBox";
             this.infoPictureBox.Size = new System.Drawing.Size(88, 46);
             this.infoPictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -385,7 +385,7 @@
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Segoe UI Semibold", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(83)))), ((int)(((byte)(153)))), ((int)(((byte)(182)))));
-            this.label4.Location = new System.Drawing.Point(374, 290);
+            this.label4.Location = new System.Drawing.Point(567, 294);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(165, 32);
             this.label4.TabIndex = 28;
@@ -398,7 +398,7 @@
             this.checkBox2.Cursor = System.Windows.Forms.Cursors.Hand;
             this.checkBox2.Font = new System.Drawing.Font("Segoe UI Semibold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.checkBox2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(83)))), ((int)(((byte)(153)))), ((int)(((byte)(182)))));
-            this.checkBox2.Location = new System.Drawing.Point(551, 332);
+            this.checkBox2.Location = new System.Drawing.Point(752, 334);
             this.checkBox2.Name = "checkBox2";
             this.checkBox2.Size = new System.Drawing.Size(123, 29);
             this.checkBox2.TabIndex = 29;
@@ -413,7 +413,7 @@
             this.checkBox3.Cursor = System.Windows.Forms.Cursors.Hand;
             this.checkBox3.Font = new System.Drawing.Font("Segoe UI Semibold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.checkBox3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(83)))), ((int)(((byte)(153)))), ((int)(((byte)(182)))));
-            this.checkBox3.Location = new System.Drawing.Point(551, 399);
+            this.checkBox3.Location = new System.Drawing.Point(752, 401);
             this.checkBox3.Name = "checkBox3";
             this.checkBox3.Size = new System.Drawing.Size(123, 29);
             this.checkBox3.TabIndex = 30;
@@ -428,7 +428,7 @@
             this.checkBox4.Cursor = System.Windows.Forms.Cursors.Hand;
             this.checkBox4.Font = new System.Drawing.Font("Segoe UI Semibold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.checkBox4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(83)))), ((int)(((byte)(153)))), ((int)(((byte)(182)))));
-            this.checkBox4.Location = new System.Drawing.Point(551, 364);
+            this.checkBox4.Location = new System.Drawing.Point(752, 366);
             this.checkBox4.Name = "checkBox4";
             this.checkBox4.Size = new System.Drawing.Size(148, 29);
             this.checkBox4.TabIndex = 31;
@@ -443,7 +443,7 @@
             this.checkBox5.Cursor = System.Windows.Forms.Cursors.Hand;
             this.checkBox5.Font = new System.Drawing.Font("Segoe UI Semibold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.checkBox5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(83)))), ((int)(((byte)(153)))), ((int)(((byte)(182)))));
-            this.checkBox5.Location = new System.Drawing.Point(700, 364);
+            this.checkBox5.Location = new System.Drawing.Point(901, 366);
             this.checkBox5.Name = "checkBox5";
             this.checkBox5.Size = new System.Drawing.Size(137, 29);
             this.checkBox5.TabIndex = 32;
@@ -458,7 +458,7 @@
             this.checkBox6.Cursor = System.Windows.Forms.Cursors.Hand;
             this.checkBox6.Font = new System.Drawing.Font("Segoe UI Semibold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.checkBox6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(83)))), ((int)(((byte)(153)))), ((int)(((byte)(182)))));
-            this.checkBox6.Location = new System.Drawing.Point(700, 332);
+            this.checkBox6.Location = new System.Drawing.Point(901, 334);
             this.checkBox6.Name = "checkBox6";
             this.checkBox6.Size = new System.Drawing.Size(108, 29);
             this.checkBox6.TabIndex = 33;
@@ -473,7 +473,7 @@
             this.checkBox7.Cursor = System.Windows.Forms.Cursors.Hand;
             this.checkBox7.Font = new System.Drawing.Font("Segoe UI Semibold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.checkBox7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(83)))), ((int)(((byte)(153)))), ((int)(((byte)(182)))));
-            this.checkBox7.Location = new System.Drawing.Point(700, 297);
+            this.checkBox7.Location = new System.Drawing.Point(901, 299);
             this.checkBox7.Name = "checkBox7";
             this.checkBox7.Size = new System.Drawing.Size(131, 29);
             this.checkBox7.TabIndex = 34;
@@ -488,7 +488,7 @@
             this.checkBox8.Cursor = System.Windows.Forms.Cursors.Hand;
             this.checkBox8.Font = new System.Drawing.Font("Segoe UI Semibold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.checkBox8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(83)))), ((int)(((byte)(153)))), ((int)(((byte)(182)))));
-            this.checkBox8.Location = new System.Drawing.Point(700, 399);
+            this.checkBox8.Location = new System.Drawing.Point(901, 401);
             this.checkBox8.Name = "checkBox8";
             this.checkBox8.Size = new System.Drawing.Size(169, 29);
             this.checkBox8.TabIndex = 35;
@@ -505,7 +505,7 @@
             this.checkBox1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.checkBox1.Font = new System.Drawing.Font("Segoe UI Semibold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.checkBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(83)))), ((int)(((byte)(153)))), ((int)(((byte)(182)))));
-            this.checkBox1.Location = new System.Drawing.Point(551, 297);
+            this.checkBox1.Location = new System.Drawing.Point(752, 299);
             this.checkBox1.Name = "checkBox1";
             this.checkBox1.Size = new System.Drawing.Size(107, 29);
             this.checkBox1.TabIndex = 26;
@@ -519,7 +519,7 @@
             this.radioButton12.AutoSize = true;
             this.radioButton12.Cursor = System.Windows.Forms.Cursors.Hand;
             this.radioButton12.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton12.Location = new System.Drawing.Point(183, 160);
+            this.radioButton12.Location = new System.Drawing.Point(304, 160);
             this.radioButton12.Name = "radioButton12";
             this.radioButton12.Size = new System.Drawing.Size(137, 28);
             this.radioButton12.TabIndex = 20;
@@ -532,7 +532,9 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(56)))), ((int)(((byte)(58)))));
-            this.ClientSize = new System.Drawing.Size(864, 515);
+            this.ClientSize = new System.Drawing.Size(1069, 515);
+            this.Controls.Add(this.selectedAlgorithmLabel);
+            this.Controls.Add(this.panel2);
             this.Controls.Add(this.checkBox8);
             this.Controls.Add(this.checkBox7);
             this.Controls.Add(this.checkBox6);
@@ -545,12 +547,10 @@
             this.Controls.Add(this.infoPictureBox);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.selectedAlgorithmLabel);
             this.Controls.Add(this.AlgorithmGroupBox);
             this.Controls.Add(this.originalTimeBox);
             this.Controls.Add(this.sizeTrackBar);
             this.Controls.Add(this.button1);
-            this.Controls.Add(this.panel2);
             this.Controls.Add(this.githubLinkLabel);
             this.Controls.Add(this.label5);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
