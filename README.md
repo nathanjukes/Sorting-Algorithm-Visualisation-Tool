@@ -17,6 +17,11 @@ Or download here:
 
 ![Demo Gif](https://github.com/nathanjukes/Sorting-Algorithm-Visualisation/blob/master/Assets/DemoRecording.gif)
 
+## Change Log
+
+1.01 - Added Shell Sort
+
+
 ## Usage
 
 Simply download the application from the link above and install, no other dependencies required.
