@@ -17,6 +17,8 @@ namespace SortingAlgorithmVisualisation.Algorithms
 
             StartCombSort(elements);
 
+            DisplaySort.SortComplete = true;
+
             ShowCompletedDisplay(graphics, maxWidth, maxHeight, elements, threadDelay);
         }
 

@@ -29,7 +29,7 @@ namespace SortingAlgorithmVisualisation.Algorithms
             {
                 Thread.Sleep(700);
 
-                ClearDisplay(elements);
+                ClearDisplay();
                 CountSort(elements, i);
 
                 //Redraw all elements
@@ -79,7 +79,7 @@ namespace SortingAlgorithmVisualisation.Algorithms
             }
         }
 
-        private void ClearDisplay(int[] elements)
+        private void ClearDisplay()
         {
             for(int i = 0; i < elementCount; i++)
             {

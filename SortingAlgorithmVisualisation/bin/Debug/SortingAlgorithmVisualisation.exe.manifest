@@ -42,14 +42,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="SortingAlgorithmVisualisation.exe" size="624648">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="SortingAlgorithmVisualisation.exe" size="625672">
       <assemblyIdentity name="SortingAlgorithmVisualisation" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>nokdv6r9yTo0SnYmuxkdeTGhZgvuazTOhNeJ0Ptoqhk=</dsig:DigestValue>
+        <dsig:DigestValue>AMN7A4Z4DtBIYj3gABsm26oeRM0Ze99cO1/rly5TFEc=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>

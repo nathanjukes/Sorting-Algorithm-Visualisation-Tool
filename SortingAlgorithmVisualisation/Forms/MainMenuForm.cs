@@ -30,9 +30,9 @@ namespace SortingAlgorithmVisualisation
 
         private void RunButton_Click(object sender, EventArgs e)
         {
-            if (SetAlgorithmParameters()) //Sets parameters needed, validates that algorithm is selected
+            if (SetAlgorithmData()) //Sets parameters needed, validates that algorithm is selected
             {
-                SetDisplayParameters();
+                SetDisplayData();
 
                 if(originalTimeBox.Checked)
                 {
@@ -65,7 +65,7 @@ namespace SortingAlgorithmVisualisation
             return "standard";
         }
 
-        private bool SetAlgorithmParameters()
+        private bool SetAlgorithmData()
         {
             foreach(RadioButton rb in AlgorithmGroupBox.Controls.OfType<RadioButton>())
             {
@@ -119,7 +119,7 @@ namespace SortingAlgorithmVisualisation
                     algorithm.timeComplexity = "O(n²)";
                     algorithm.spaceComplexity = "O(1)";
                     break;
-                case "Radix Sort":
+                case "Radix Sort LSD":
                     algorithm = new RadixSort();
                     algorithm.timeComplexity = "O(nk)";
                     algorithm.spaceComplexity = "O(n+k)";
@@ -134,6 +134,11 @@ namespace SortingAlgorithmVisualisation
                     algorithm.timeComplexity = ("O(n²)");
                     algorithm.spaceComplexity = ("O(1)");
                     break;
+                case "Gnome Sort":
+                    algorithm = new GnomeSort();
+                    algorithm.timeComplexity = ("O(n²)");
+                    algorithm.spaceComplexity = ("O(1)");
+                    break;
                 case null:
                     MessageBox.Show("Please select an algorithm","Error");
                     return false;
@@ -141,7 +146,7 @@ namespace SortingAlgorithmVisualisation
             return true;
         }
 
-        private void SetDisplayParameters()
+        private void SetDisplayData()
         {
             int userDefinedSize = sizeTrackBar.Value;
 
