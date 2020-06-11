@@ -19,6 +19,8 @@ Or download here:
 
 ## Change Log
 
+- 1.03 - Added Gnome Sort, Changed GUI Sizing
+
 - 1.02 - Added Comb Sort
 
 - 1.01 - Added Shell Sort
