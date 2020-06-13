@@ -2,14 +2,14 @@
 
 [![Build Status](https://scrutinizer-ci.com/g/pH7Software/pH7-Social-Dating-CMS/badges/build.png?b=master)](https://scrutinizer-ci.com/g/pH7Software/pH7-Social-Dating-CMS/build-status/master) 
 ![Version Status](https://img.shields.io/badge/version-v1.03-blue)
-[![GitHub license](https://img.shields.io/github/license/Naereen/StrapDown.js.svg)](https://github.com/Naereen/StrapDown.js/blob/master/LICENSE)
+[![GitHub license](https://img.shields.io/github/license/Naereen/StrapDown.js.svg)](https://github.com/nathanjukes/Sorting-Algorithm-Visualisation/blob/master/LICENSE.md)
 
 A Sorting Algorithm Visualiser made in C# Windows Forms
 
 ## Installation
 Head to this directory to find the application: 
 ```bash
-"C:\AlgorithmVisualisation\SortingAlgorithmVisualisation\Publish"
+"C:\AlgorithmVisualisation\SortingAlgorithmVisualisation\Publish" 
 ```
 Or download here:
 [(64-bit)](https://github.com/nathanjukes/Sorting-Algorithm-Visualisation/raw/master/SortingAlgorithmVisualisation/bin/ApplicationDownload.zip) and run the setup.exe
