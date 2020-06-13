@@ -1,6 +1,7 @@
-## Sorting Algorithm Visualisation [![Tweet](https://img.shields.io/twitter/url/http/shields.io.svg?style=social)](https://twitter.com/intent/tweet?text=url=https://github.com/nathanjukes/Sorting-Algorithm-Visualisation-Tool)
+## Sorting Algorithm Visualisation [![Tweet](https://img.shields.io/twitter/url/http/shields.io.svg?style=social)](https://twitter.com/intent/tweet?url=https%3A%2F%2Fgithub.com%2Fnathanjukes%2FSorting-Algorithm-Visualisation-Tool&text=Check%20out%20this%20Sorting%20Algortihm%20Visualiser%20on%20Github:)
 
-[![Build Status](https://scrutinizer-ci.com/g/pH7Software/pH7-Social-Dating-CMS/badges/build.png?b=master)](https://scrutinizer-ci.com/g/pH7Software/pH7-Social-Dating-CMS/build-status/master)
+[![Build Status](https://scrutinizer-ci.com/g/pH7Software/pH7-Social-Dating-CMS/badges/build.png?b=master)](https://scrutinizer-ci.com/g/pH7Software/pH7-Social-Dating-CMS/build-status/master) 
+![Version Status](https://img.shields.io/badge/version-1.03-blue)
 
 A Sorting Algorithm Visualiser made in C# Windows Forms
 
