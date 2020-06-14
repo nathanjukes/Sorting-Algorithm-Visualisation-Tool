@@ -139,6 +139,11 @@ namespace SortingAlgorithmVisualisation
                     algorithm.timeComplexity = ("O(n²)");
                     algorithm.spaceComplexity = ("O(1)");
                     break;
+                case "OddEven Sort":
+                    algorithm = new OddEvenSort();
+                    algorithm.timeComplexity = ("O(n²)");
+                    algorithm.spaceComplexity = ("O(1)");
+                    break; 
                 case null:
                     MessageBox.Show("Please select an algorithm","Error");
                     return false;

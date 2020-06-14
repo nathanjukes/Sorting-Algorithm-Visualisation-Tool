@@ -85,6 +85,7 @@
     <Compile Include="Algorithms\HeapSort.cs" />
     <Compile Include="Algorithms\InsertionSort.cs" />
     <Compile Include="Algorithms\MergeSort.cs" />
+    <Compile Include="Algorithms\OddEvenSort.cs" />
     <Compile Include="Algorithms\QuickSort.cs" />
     <Compile Include="Algorithms\RadixSort.cs" />
     <Compile Include="Algorithms\SelectionSort.cs" />
