@@ -14,6 +14,9 @@
   <a href="https://github.com/nathanjukes/Sorting-Algorithm-Visualisation/blob/master/LICENSE.md">
     <img src="https://img.shields.io/github/license/Naereen/StrapDown.js.svg">
   </a>
+  <a href="https%3A%2F%2Fgithub.com%2Fnathanjukes%2FSorting-Algorithm-Visualisation-Tool&text=Check%20out%20this%20Sorting%20Algortihm%20Visualiser%20on%20Github">
+    <img src="https://img.shields.io/twitter/url/http/shields.io.svg?style=social">
+  </a>
 </p>
 
 ## Installation
