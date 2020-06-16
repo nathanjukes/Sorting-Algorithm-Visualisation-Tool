@@ -25,7 +25,7 @@
     <TargetCulture>en</TargetCulture>
     <ProductName>Sorting Algorithm Visualiser</ProductName>
     <PublisherName>Nathan Jukes</PublisherName>
-    <ApplicationRevision>5</ApplicationRevision>
+    <ApplicationRevision>6</ApplicationRevision>
     <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
     <UseApplicationTrust>false</UseApplicationTrust>
     <PublishWizardCompleted>true</PublishWizardCompleted>
@@ -81,6 +81,7 @@
     <Compile Include="Algorithms\BubbleSort.cs" />
     <Compile Include="Algorithms\CocktailSort.cs" />
     <Compile Include="Algorithms\CombSort.cs" />
+    <Compile Include="Algorithms\CycleSort.cs" />
     <Compile Include="Algorithms\GnomeSort.cs" />
     <Compile Include="Algorithms\HeapSort.cs" />
     <Compile Include="Algorithms\InsertionSort.cs" />

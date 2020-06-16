@@ -64,6 +64,7 @@
             this.checkBox8 = new System.Windows.Forms.CheckBox();
             this.checkBox1 = new System.Windows.Forms.CheckBox();
             this.radioButton14 = new System.Windows.Forms.RadioButton();
+            this.radioButton15 = new System.Windows.Forms.RadioButton();
             ((System.ComponentModel.ISupportInitialize)(this.sizeTrackBar)).BeginInit();
             this.AlgorithmGroupBox.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.infoPictureBox)).BeginInit();
@@ -250,6 +251,7 @@
             // AlgorithmGroupBox
             // 
             this.AlgorithmGroupBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(83)))), ((int)(((byte)(153)))), ((int)(((byte)(182)))));
+            this.AlgorithmGroupBox.Controls.Add(this.radioButton15);
             this.AlgorithmGroupBox.Controls.Add(this.radioButton14);
             this.AlgorithmGroupBox.Controls.Add(this.radioButton13);
             this.AlgorithmGroupBox.Controls.Add(this.radioButton8);
@@ -560,6 +562,21 @@
             this.radioButton14.UseVisualStyleBackColor = false;
             this.radioButton14.CheckedChanged += new System.EventHandler(this.RadioButton_CheckedChanged);
             // 
+            // radioButton15
+            // 
+            this.radioButton15.AccessibleName = "Cycle Sort";
+            this.radioButton15.AutoSize = true;
+            this.radioButton15.BackColor = System.Drawing.Color.Transparent;
+            this.radioButton15.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.radioButton15.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radioButton15.Location = new System.Drawing.Point(304, 260);
+            this.radioButton15.Name = "radioButton15";
+            this.radioButton15.Size = new System.Drawing.Size(132, 28);
+            this.radioButton15.TabIndex = 23;
+            this.radioButton15.Text = "Cycle Sort";
+            this.radioButton15.UseVisualStyleBackColor = false;
+            this.radioButton15.CheckedChanged += new System.EventHandler(this.RadioButton_CheckedChanged);
+            // 
             // MainMenuForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -639,6 +656,7 @@
         private System.Windows.Forms.RadioButton radioButton12;
         private System.Windows.Forms.RadioButton radioButton13;
         private System.Windows.Forms.RadioButton radioButton14;
+        private System.Windows.Forms.RadioButton radioButton15;
     }
 }
 
