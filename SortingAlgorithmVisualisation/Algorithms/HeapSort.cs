@@ -20,8 +20,6 @@ namespace SortingAlgorithmVisualisation.Algorithms
 
         public override void BeginAlgorithm(int[] elements)
         {
-            elementCount = elements.Length;
-
             sortedLength = elementCount;
 
             if (elementCount % 2 == 0)
@@ -33,10 +31,6 @@ namespace SortingAlgorithmVisualisation.Algorithms
             Heapify(elements);
 
             DeleteElements(elements);
-
-            DisplaySort.SortComplete = true;
-
-            ShowCompletedDisplay(graphics, maxWidth, maxHeight, elements, threadDelay);
         }
 
         private void Heapify(int[] elements)

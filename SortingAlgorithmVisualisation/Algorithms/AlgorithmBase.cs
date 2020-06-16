@@ -22,16 +22,59 @@ namespace SortingAlgorithmVisualisation.Algorithms
         public abstract int elementCount { get; set; }
         public abstract void BeginAlgorithm(int[] elements);
 
-        protected void ShowCompletedDisplay(Graphics graphics, int maxWidth, int maxHeight, int[] elements, int threadDelay)
+        public void ShowCompletedDisplay(int[] elements)
         {
-            FormattingDisplay formatDisplay = new FormattingDisplay();
+            ShowAllGreen(elements);
+        }
 
-            formatDisplay.ShowAllGreen(graphics, maxWidth, maxHeight, elements, threadDelay);
+        private void ShowAllGreen(int[] elements)
+        {
+            if (threadDelay == 200)
+            {
+                threadDelay = 80;
+            }
+            else if (threadDelay == 0)
+            {
+                threadDelay = 1;
+            }
+
+            for (int i = 0; i < elements.Length; i++)
+            {
+                graphics.FillRectangle(new SolidBrush(Color.FromArgb(83, 153, 182)), i * maxWidth, maxHeight - elements[i], maxWidth, elements[i]);
+                Thread.Sleep(threadDelay);
+            }
+        }
+
+        public void SetComplexity(int complexityRangeValue)
+        {
+            switch (complexityRangeValue)
+            {
+                case 0:
+                    timeComplexity = "O(nLog(n))";
+                    spaceComplexity = "O(1)";
+                    break;
+                case 1:
+                    timeComplexity = "O(nLog(n))";
+                    spaceComplexity = "O(Log(n))";
+                    break;
+                case 2:
+                    timeComplexity = "O(nLog(n))";
+                    spaceComplexity = "O(n)";
+                    break;
+                case 3:
+                    timeComplexity = "O(nk)";
+                    spaceComplexity = "O(n+k)";
+                    break;
+                case 4:
+                    timeComplexity = "O(n²)";
+                    spaceComplexity = "O(1)";
+                    break;
+            }
         }
 
         protected void SwapElements(int index1, int index2, int[] elements, int sortType)
         {
-            switch(sortType)
+            switch (sortType)
             {
                 case 0:
                     graphics.FillRectangle(new SolidBrush(Color.DarkRed), index1 * maxWidth, maxHeight - elements[index1], maxWidth, elements[index1]);
@@ -58,7 +101,7 @@ namespace SortingAlgorithmVisualisation.Algorithms
             elements[index1] = elements[index2];
             elements[index2] = tempValue;
 
-            switch(sortType)
+            switch (sortType)
             {
                 default:
                     graphics.FillRectangle(new SolidBrush(Color.Black), index1 * maxWidth, maxHeight - elements[index1], maxWidth, elements[index1]);
@@ -68,11 +111,11 @@ namespace SortingAlgorithmVisualisation.Algorithms
                     graphics.FillRectangle(new SolidBrush(Color.DarkRed), index1 * maxWidth, maxHeight - elements[index1], maxWidth, elements[index1]);
                     graphics.FillRectangle(new SolidBrush(Color.Black), index2 * maxWidth, maxHeight - elements[index2], maxWidth, elements[index2]);
 
-                    if(GetType().Name.Contains("Selection"))
+                    if (GetType().Name.Contains("Selection"))
                     {
                         Thread.Sleep(threadDelay);
                     }
-                    
+
                     graphics.FillRectangle(new SolidBrush(Color.Black), index1 * maxWidth, maxHeight - elements[index1], maxWidth, elements[index1]);
                     break;
                 case 2:

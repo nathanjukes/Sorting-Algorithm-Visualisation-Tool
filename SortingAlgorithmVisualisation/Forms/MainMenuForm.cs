@@ -80,23 +80,19 @@ namespace SortingAlgorithmVisualisation
             {
                 case "Bubble Sort":
                     algorithm = new BubbleSort();
-                    algorithm.timeComplexity = "O(n²)";
-                    algorithm.spaceComplexity = "O(1)";
+                    algorithm.SetComplexity(4);
                     break;
                 case "Merge Sort":
                     algorithm = new MergeSort();
-                    algorithm.timeComplexity = "O(nLog(n))";
-                    algorithm.spaceComplexity = "O(n)";
+                    algorithm.SetComplexity(2);
                     break;
                 case "Insertion Sort":
                     algorithm = new InsertionSort();
-                    algorithm.timeComplexity = "O(n²)";
-                    algorithm.spaceComplexity = "O(1)";
+                    algorithm.SetComplexity(4);
                     break;
                 case "Heap Sort":
                     algorithm = new HeapSort();
-                    algorithm.timeComplexity = "O(nLog(n))";
-                    algorithm.spaceComplexity = "O(1)";
+                    algorithm.SetComplexity(0);
                     break;
                 case "Bogo Sort":
                     algorithm = new BogoSort();
@@ -106,48 +102,39 @@ namespace SortingAlgorithmVisualisation
                     break;
                 case "Selection Sort":
                     algorithm = new SelectionSort();
-                    algorithm.timeComplexity = "O(n²)";
-                    algorithm.spaceComplexity = "O(1)";
+                    algorithm.SetComplexity(4);
                     break;
                 case "Quick Sort":
                     algorithm = new QuickSort();
-                    algorithm.timeComplexity = "O(nLog(n))";
-                    algorithm.spaceComplexity = "O(Log(n))";
+                    algorithm.SetComplexity(1);
                     break;
                 case "Cocktail Sort":
                     algorithm = new CocktailSort();
-                    algorithm.timeComplexity = "O(n²)";
-                    algorithm.spaceComplexity = "O(1)";
+                    algorithm.SetComplexity(4);
                     break;
                 case "Radix Sort LSD":
                     algorithm = new RadixSort();
-                    algorithm.timeComplexity = "O(nk)";
-                    algorithm.spaceComplexity = "O(n+k)";
+                    algorithm.SetComplexity(3);
                     break;
                 case "Shell Sort":
                     algorithm = new ShellSort();
-                    algorithm.timeComplexity = ("O(n²)");
-                    algorithm.spaceComplexity = ("O(1)");
+                    algorithm.SetComplexity(4);
                     break;
                 case "Comb Sort":
                     algorithm = new CombSort();
-                    algorithm.timeComplexity = ("O(n²)");
-                    algorithm.spaceComplexity = ("O(1)");
+                    algorithm.SetComplexity(4);
                     break;
                 case "Gnome Sort":
                     algorithm = new GnomeSort();
-                    algorithm.timeComplexity = ("O(n²)");
-                    algorithm.spaceComplexity = ("O(1)");
+                    algorithm.SetComplexity(4);
                     break;
                 case "OddEven Sort":
                     algorithm = new OddEvenSort();
-                    algorithm.timeComplexity = ("O(n²)");
-                    algorithm.spaceComplexity = ("O(1)");
+                    algorithm.SetComplexity(4);
                     break;
                 case "Cycle Sort":
                     algorithm = new CycleSort();
-                    algorithm.timeComplexity = ("O(n²)");
-                    algorithm.spaceComplexity = ("O(1)");
+                    algorithm.SetComplexity(4);
                     break;
                 case null:
                     MessageBox.Show("Please select an algorithm","Error");

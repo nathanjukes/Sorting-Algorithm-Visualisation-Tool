@@ -14,12 +14,9 @@ namespace SortingAlgorithmVisualisation.Algorithms
         public override int elementCount { get; set; }
 
         private string[] elementDuplicates;
+
         public override void BeginAlgorithm(int[] elements)
         {
-            elementCount = elements.Length;
-
-            DisplaySort.SortComplete = true;
-
             StartRadixSort(elements);
         }
 
@@ -37,7 +34,6 @@ namespace SortingAlgorithmVisualisation.Algorithms
             }
 
             Thread.Sleep(220);
-            ShowCompletedDisplay(graphics, maxWidth, maxHeight, elements, threadDelay);
         }
 
         private void CountSort(int[] elements, int LengthToMinus)

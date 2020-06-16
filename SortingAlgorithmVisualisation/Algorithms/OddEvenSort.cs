@@ -13,13 +13,7 @@ namespace SortingAlgorithmVisualisation.Algorithms
 
         public override void BeginAlgorithm(int[] elements)
         {
-            elementCount = elements.Length;
-
             StartOddEvenSort(elements);
-
-            DisplaySort.SortComplete = true;
-
-            ShowCompletedDisplay(graphics, maxWidth, maxHeight, elements, threadDelay);
         }
 
         private void StartOddEvenSort(int[] elements)

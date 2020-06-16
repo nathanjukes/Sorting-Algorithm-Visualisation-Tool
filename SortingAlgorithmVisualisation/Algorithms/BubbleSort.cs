@@ -15,14 +15,10 @@ namespace SortingAlgorithmVisualisation.Algorithms
 
         public override void BeginAlgorithm(int[] elements)
         {
-            elementCount = elements.Length;
-
-            Sort(elements, graphics, maxWidth, maxHeight);
-
-            DisplaySort.SortComplete = true;
+            StartBubbleSort(elements);
         }
 
-        private void Sort(int[] elements, Graphics graphics, int maxWidth, int maxHeight)
+        private void StartBubbleSort(int[] elements)
         {
             for (int i = 0; i < elementCount; i++)
             {
@@ -34,8 +30,6 @@ namespace SortingAlgorithmVisualisation.Algorithms
                     }
                 }
             }
-
-            ShowCompletedDisplay(graphics, maxWidth, maxHeight, elements, threadDelay);
         }
     }
 }

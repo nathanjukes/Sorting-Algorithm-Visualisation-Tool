@@ -14,13 +14,7 @@ namespace SortingAlgorithmVisualisation.Algorithms
 
         public override void BeginAlgorithm(int[] elements)
         {
-            elementCount = elements.Length;
-
             StartInsertionSort(elements);
-
-            DisplaySort.SortComplete = true;
-
-            ShowCompletedDisplay(graphics, maxWidth, maxHeight, elements, threadDelay);
         }
 
         private void StartInsertionSort(int[] elements)

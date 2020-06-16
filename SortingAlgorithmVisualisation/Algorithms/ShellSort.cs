@@ -12,13 +12,7 @@ namespace SortingAlgorithmVisualisation.Algorithms
         public override int elementCount { get; set; }
         public override void BeginAlgorithm(int[] elements)
         {
-            elementCount = elements.Length;
-
             StartShellSort(elements);
-
-            DisplaySort.SortComplete = true;
-
-            ShowCompletedDisplay(graphics, maxWidth, maxHeight, elements, threadDelay);
         }
 
         private void StartShellSort(int[] elements)

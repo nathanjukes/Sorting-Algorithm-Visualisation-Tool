@@ -15,8 +15,6 @@ namespace SortingAlgorithmVisualisation.Algorithms
         private int[] elementsCopy;
         public override void BeginAlgorithm(int[] elements)
         {
-            elementCount = elements.Length;
-
             elementsCopy = (int[])elements.Clone();
 
             StartBogoSort(elements);
@@ -54,7 +52,7 @@ namespace SortingAlgorithmVisualisation.Algorithms
                 if (CheckIfSorted(elements))
                 {
                     DisplaySort.SortComplete = true;
-                    ShowCompletedDisplay(graphics, maxWidth, maxHeight, elements, threadDelay);
+                    ShowCompletedDisplay(elements);
                     break;
                 }
                 else

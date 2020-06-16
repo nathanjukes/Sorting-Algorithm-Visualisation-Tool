@@ -35,6 +35,49 @@ namespace SortingAlgorithmVisualisation
             algorithm = _algorithm;
             setModifier = _setModifier.Replace(" ", "").ToLower();
 
+            SetUpFormData(_setModifier);
+        }
+
+        private async void AlgorithmPanel_Paint(object sender, PaintEventArgs e)
+        {
+            Graphics graphics = algorithmPanel.CreateGraphics();
+
+            int maxWidth = algorithmPanel.Width / elementCount;  //Width of each 
+            int maxHeight = algorithmPanel.Height; //Max Height of the panel
+
+            elements = DataGeneration.GetData(maxHeight, elementCount, setModifier);
+
+            for (int i = 0; i < elementCount; i++)
+            {
+                graphics.FillRectangle(new SolidBrush(Color.Black), i * maxWidth, maxHeight - elements[i], maxWidth, elements[i]);
+            }
+
+            algorithm.maxWidth = maxWidth;
+            algorithm.maxHeight = maxHeight;
+            algorithm.graphics = graphics;
+            algorithm.elementCount = elements.Length;
+
+            Thread.Sleep(500);
+
+            await Task.Run(() => BeginSorting(graphics, maxWidth, maxHeight, elements));
+
+            SortComplete = true;
+            algorithm.ShowCompletedDisplay(elements);
+        }
+
+        private void BeginSorting(Graphics graphics, int maxWidth, int maxHeight, int[] elements)
+        {
+            algorithm.BeginAlgorithm(elements);
+        }
+
+        private void DisplaySort_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            Thread.Sleep(100);
+            Application.Restart();
+        }
+
+        private void SetUpFormData(string _setModifier)
+        {
             //Setting form components to their proper title
             string algorithmName = algorithm.GetType().Name;
             tComplexityLabel.Text += algorithm.timeComplexity;
@@ -54,41 +97,6 @@ namespace SortingAlgorithmVisualisation
             {
                 secondDelay.Text += threadDelay + "ms";
             }
-
-            //Add sounds
-        }
-
-        private void AlgorithmPanel_Paint(object sender, PaintEventArgs e)
-        {
-            Graphics graphics = algorithmPanel.CreateGraphics();
-
-            int maxWidth = algorithmPanel.Width / elementCount;  //Width of each 
-            int maxHeight = algorithmPanel.Height; //Max Height of the panel
-
-            elements = DataGeneration.GetData(maxHeight, elementCount, setModifier);
-
-            for (int i = 0; i < elementCount; i++)
-            {
-                graphics.FillRectangle(new SolidBrush(Color.Black), i * maxWidth, maxHeight - elements[i], maxWidth, elements[i]);
-            }
-
-            algorithm.maxWidth = maxWidth;
-            algorithm.maxHeight = maxHeight;
-            algorithm.graphics = graphics;
-
-            Thread.Sleep(500);
-            Task beginSort = Task.Run(() => BeginSorting(graphics, maxWidth, maxHeight, elements));
-        }
-
-        private void BeginSorting(Graphics graphics, int maxWidth, int maxHeight, int[] elements)
-        {
-            algorithm.BeginAlgorithm(elements);
-        }
-
-        private void DisplaySort_FormClosed(object sender, FormClosedEventArgs e)
-        {
-            Thread.Sleep(100);
-            Application.Restart();
         }
 
         protected override void WndProc(ref Message message) //Prevents movement of the display while the algorithm is taking place - fixes GDI crashes

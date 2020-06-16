@@ -92,7 +92,6 @@
     <Compile Include="Algorithms\SelectionSort.cs" />
     <Compile Include="Algorithms\ShellSort.cs" />
     <Compile Include="Formatting\DataGeneration.cs" />
-    <Compile Include="Formatting\FormattingDisplay.cs" />
     <Compile Include="Forms\ComplexityPopUpForm.cs">
       <SubType>Form</SubType>
     </Compile>

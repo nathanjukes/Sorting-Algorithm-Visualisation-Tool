@@ -17,15 +17,9 @@ namespace SortingAlgorithmVisualisation.Algorithms
         private int qCount = 0;
         public override void BeginAlgorithm(int[] elements)
         {
-            elementCount = elements.Length;
-            
             SplitArray(elements);
 
             Thread.Sleep(200);
-
-            DisplaySort.SortComplete = true;
-
-            ShowCompletedDisplay(graphics, maxWidth, maxHeight, elements, threadDelay);
         }
 
         private int[] SplitArray(int[] unsortedElements)

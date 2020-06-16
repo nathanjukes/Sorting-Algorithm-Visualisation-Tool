@@ -14,15 +14,10 @@ namespace SortingAlgorithmVisualisation.Algorithms
 
         public override void BeginAlgorithm(int[] elements)
         {
-            elementCount = elements.Length;
-            QuickSortStart(elements, 0, elementCount - 1);
-
-            DisplaySort.SortComplete = true;
-
-            ShowCompletedDisplay(graphics, maxWidth, maxHeight, elements, threadDelay);
+            StartQuickSort(elements, 0, elementCount - 1);
         }
 
-        private void QuickSortStart(int[] elements, int startIndex, int endIndex)
+        private void StartQuickSort(int[] elements, int startIndex, int endIndex)
         {
             if(startIndex >= endIndex)
             {
@@ -30,14 +25,14 @@ namespace SortingAlgorithmVisualisation.Algorithms
             }
             else
             {
-                int midIndex = findNextIndex(elements, startIndex, endIndex);
+                int midIndex = FindNextIndex(elements, startIndex, endIndex);
 
-                QuickSortStart(elements, startIndex, midIndex - 1);
-                QuickSortStart(elements, midIndex + 1, endIndex);
+                StartQuickSort(elements, startIndex, midIndex - 1);
+                StartQuickSort(elements, midIndex + 1, endIndex);
             }
         }
 
-        private int findNextIndex(int[] elements, int startIndex, int endIndex)
+        private int FindNextIndex(int[] elements, int startIndex, int endIndex)
         {
             int pivotValue = elements[endIndex];
             int pivotIndex = startIndex;

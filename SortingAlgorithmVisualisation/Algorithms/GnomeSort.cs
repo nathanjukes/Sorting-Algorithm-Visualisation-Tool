@@ -13,20 +13,13 @@ namespace SortingAlgorithmVisualisation.Algorithms
 
         public override void BeginAlgorithm(int[] elements)
         {
-            elementCount = elements.Length;
-
             StartGnomeSort(elements);
-
-            DisplaySort.SortComplete = true;
-
-            ShowCompletedDisplay(graphics, maxWidth, maxHeight, elements, threadDelay);
         }
 
         private void StartGnomeSort(int[] elements)
         {
             for(int i = 0; i < elementCount; i++)
             {
-
                 if(i + 1 < elementCount && i >= 0 && elements[i] > elements[i + 1])
                 {
                     SwapElements(i, i + 1, elements, 1);
