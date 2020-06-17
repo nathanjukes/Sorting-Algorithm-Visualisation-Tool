@@ -136,6 +136,10 @@ namespace SortingAlgorithmVisualisation
                     algorithm = new CycleSort();
                     algorithm.SetComplexity(4);
                     break;
+                case "Tree Sort":
+                    algorithm = new TreeSort();
+                    algorithm.SetComplexity(2);
+                    break;
                 case null:
                     MessageBox.Show("Please select an algorithm","Error");
                     return false;

@@ -93,6 +93,10 @@ namespace SortingAlgorithmVisualisation
             {
                 secondDelay.Text += threadDelay + 700 + "ms";
             }
+            else if(algorithmName.Contains("Tree"))
+            {
+                secondDelay.Text += threadDelay + 220 + "ms";
+            }
             else
             {
                 secondDelay.Text += threadDelay + "ms";

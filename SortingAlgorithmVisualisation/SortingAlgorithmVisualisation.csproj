@@ -25,7 +25,7 @@
     <TargetCulture>en</TargetCulture>
     <ProductName>Sorting Algorithm Visualiser</ProductName>
     <PublisherName>Nathan Jukes</PublisherName>
-    <ApplicationRevision>6</ApplicationRevision>
+    <ApplicationRevision>7</ApplicationRevision>
     <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
     <UseApplicationTrust>false</UseApplicationTrust>
     <PublishWizardCompleted>true</PublishWizardCompleted>
@@ -91,6 +91,7 @@
     <Compile Include="Algorithms\RadixSort.cs" />
     <Compile Include="Algorithms\SelectionSort.cs" />
     <Compile Include="Algorithms\ShellSort.cs" />
+    <Compile Include="Algorithms\TreeSort.cs" />
     <Compile Include="Formatting\DataGeneration.cs" />
     <Compile Include="Forms\ComplexityPopUpForm.cs">
       <SubType>Form</SubType>
