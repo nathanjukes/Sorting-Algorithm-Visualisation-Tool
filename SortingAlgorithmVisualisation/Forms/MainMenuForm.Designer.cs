@@ -43,6 +43,7 @@
             this.originalTimeBox = new System.Windows.Forms.CheckBox();
             this.selectedAlgorithmLabel = new System.Windows.Forms.Label();
             this.AlgorithmGroupBox = new System.Windows.Forms.GroupBox();
+            this.radioButton16 = new System.Windows.Forms.RadioButton();
             this.radioButton15 = new System.Windows.Forms.RadioButton();
             this.radioButton14 = new System.Windows.Forms.RadioButton();
             this.radioButton13 = new System.Windows.Forms.RadioButton();
@@ -65,7 +66,7 @@
             this.checkBox7 = new System.Windows.Forms.CheckBox();
             this.checkBox8 = new System.Windows.Forms.CheckBox();
             this.checkBox1 = new System.Windows.Forms.CheckBox();
-            this.radioButton16 = new System.Windows.Forms.RadioButton();
+            this.radioButton17 = new System.Windows.Forms.RadioButton();
             ((System.ComponentModel.ISupportInitialize)(this.sizeTrackBar)).BeginInit();
             this.AlgorithmGroupBox.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.infoPictureBox)).BeginInit();
@@ -252,6 +253,7 @@
             // AlgorithmGroupBox
             // 
             this.AlgorithmGroupBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(83)))), ((int)(((byte)(153)))), ((int)(((byte)(182)))));
+            this.AlgorithmGroupBox.Controls.Add(this.radioButton17);
             this.AlgorithmGroupBox.Controls.Add(this.radioButton16);
             this.AlgorithmGroupBox.Controls.Add(this.radioButton15);
             this.AlgorithmGroupBox.Controls.Add(this.radioButton14);
@@ -277,6 +279,21 @@
             this.AlgorithmGroupBox.TabIndex = 15;
             this.AlgorithmGroupBox.TabStop = false;
             this.AlgorithmGroupBox.Text = "Algorithms ";
+            // 
+            // radioButton16
+            // 
+            this.radioButton16.AccessibleName = "Tree Sort";
+            this.radioButton16.AutoSize = true;
+            this.radioButton16.BackColor = System.Drawing.Color.Transparent;
+            this.radioButton16.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.radioButton16.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radioButton16.Location = new System.Drawing.Point(304, 310);
+            this.radioButton16.Name = "radioButton16";
+            this.radioButton16.Size = new System.Drawing.Size(113, 28);
+            this.radioButton16.TabIndex = 24;
+            this.radioButton16.Text = "Tree Sort";
+            this.radioButton16.UseVisualStyleBackColor = false;
+            this.radioButton16.CheckedChanged += new System.EventHandler(this.RadioButton_CheckedChanged);
             // 
             // radioButton15
             // 
@@ -314,7 +331,7 @@
             this.radioButton13.AutoSize = true;
             this.radioButton13.Cursor = System.Windows.Forms.Cursors.Hand;
             this.radioButton13.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton13.Location = new System.Drawing.Point(304, 353);
+            this.radioButton13.Location = new System.Drawing.Point(304, 360);
             this.radioButton13.Name = "radioButton13";
             this.radioButton13.Size = new System.Drawing.Size(151, 28);
             this.radioButton13.TabIndex = 21;
@@ -579,20 +596,19 @@
             this.checkBox1.UseVisualStyleBackColor = true;
             this.checkBox1.CheckedChanged += new System.EventHandler(this.CheckBox_CheckedChanged);
             // 
-            // radioButton16
+            // radioButton17
             // 
-            this.radioButton16.AccessibleName = "Tree Sort";
-            this.radioButton16.AutoSize = true;
-            this.radioButton16.BackColor = System.Drawing.Color.Transparent;
-            this.radioButton16.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.radioButton16.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton16.Location = new System.Drawing.Point(304, 310);
-            this.radioButton16.Name = "radioButton16";
-            this.radioButton16.Size = new System.Drawing.Size(113, 28);
-            this.radioButton16.TabIndex = 24;
-            this.radioButton16.Text = "Tree Sort";
-            this.radioButton16.UseVisualStyleBackColor = false;
-            this.radioButton16.CheckedChanged += new System.EventHandler(this.RadioButton_CheckedChanged);
+            this.radioButton17.AccessibleName = "Pancake Sort";
+            this.radioButton17.AutoSize = true;
+            this.radioButton17.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.radioButton17.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radioButton17.Location = new System.Drawing.Point(304, 410);
+            this.radioButton17.Name = "radioButton17";
+            this.radioButton17.Size = new System.Drawing.Size(163, 28);
+            this.radioButton17.TabIndex = 25;
+            this.radioButton17.Text = "Pancake Sort";
+            this.radioButton17.UseVisualStyleBackColor = true;
+            this.radioButton17.CheckedChanged += new System.EventHandler(this.RadioButton_CheckedChanged);
             // 
             // MainMenuForm
             // 
@@ -675,6 +691,7 @@
         private System.Windows.Forms.RadioButton radioButton14;
         private System.Windows.Forms.RadioButton radioButton15;
         private System.Windows.Forms.RadioButton radioButton16;
+        private System.Windows.Forms.RadioButton radioButton17;
     }
 }
 

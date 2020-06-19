@@ -8,8 +8,8 @@
   <a href="https://scrutinizer-ci.com/g/pH7Software/pH7-Social-Dating-CMS/build-status/master">
       <img src="https://scrutinizer-ci.com/g/pH7Software/pH7-Social-Dating-CMS/badges/build.png?b=master">
   </a>
-  <a href="https://img.shields.io/badge/version-v1.06-blue">
-    <img src="https://img.shields.io/badge/version-v1.06-blue">
+  <a href="https://img.shields.io/badge/version-v1.07-blue">
+    <img src="https://img.shields.io/badge/version-v1.07-blue">
   </a>
   <a href="https://github.com/nathanjukes/Sorting-Algorithm-Visualisation/blob/master/LICENSE.md">
     <img src="https://img.shields.io/github/license/Naereen/StrapDown.js.svg">
@@ -33,6 +33,8 @@ Or download here:
 ![Demo Gif](https://github.com/nathanjukes/Sorting-Algorithm-Visualisation/blob/master/Assets/DemoRecording.gif)
 
 ## Change Log
+
+- 1.07 - Added Pancake Sort
 
 - 1.06 - Added Tree Sort (Pre-Order Traversal)
 

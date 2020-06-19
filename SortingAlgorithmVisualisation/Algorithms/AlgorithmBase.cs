@@ -22,12 +22,12 @@ namespace SortingAlgorithmVisualisation.Algorithms
         public abstract int elementCount { get; set; }
         public abstract void BeginAlgorithm(int[] elements);
 
-        public void ShowCompletedDisplay(int[] elements)
+        public async void ShowCompletedDisplay(int[] elements)
         {
-            ShowAllGreen(elements);
+            await Task.Run(() => ShowAllElementsBlue(elements));
         }
 
-        private void ShowAllGreen(int[] elements)
+        private void ShowAllElementsBlue(int[] elements)
         {
             if (threadDelay == 200)
             {

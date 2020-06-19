@@ -97,6 +97,10 @@ namespace SortingAlgorithmVisualisation
             {
                 secondDelay.Text += threadDelay + 220 + "ms";
             }
+            else if (algorithmName.Contains("Pancake"))
+            {
+                secondDelay.Text += threadDelay + 20 + "ms";
+            }
             else
             {
                 secondDelay.Text += threadDelay + "ms";

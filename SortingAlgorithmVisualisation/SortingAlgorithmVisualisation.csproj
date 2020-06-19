@@ -25,7 +25,7 @@
     <TargetCulture>en</TargetCulture>
     <ProductName>Sorting Algorithm Visualiser</ProductName>
     <PublisherName>Nathan Jukes</PublisherName>
-    <ApplicationRevision>7</ApplicationRevision>
+    <ApplicationRevision>8</ApplicationRevision>
     <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
     <UseApplicationTrust>false</UseApplicationTrust>
     <PublishWizardCompleted>true</PublishWizardCompleted>
@@ -87,6 +87,7 @@
     <Compile Include="Algorithms\InsertionSort.cs" />
     <Compile Include="Algorithms\MergeSort.cs" />
     <Compile Include="Algorithms\OddEvenSort.cs" />
+    <Compile Include="Algorithms\PancakeSort.cs" />
     <Compile Include="Algorithms\QuickSort.cs" />
     <Compile Include="Algorithms\RadixSort.cs" />
     <Compile Include="Algorithms\SelectionSort.cs" />

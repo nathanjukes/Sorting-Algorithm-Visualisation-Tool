@@ -26,7 +26,6 @@ namespace SortingAlgorithmVisualisation.Algorithms
             {
                 Thread.Sleep(700);
 
-                ClearDisplay();
                 CountSort(elements, i);
 
                 //Redraw all elements
@@ -85,6 +84,8 @@ namespace SortingAlgorithmVisualisation.Algorithms
 
         private void ReDrawDisplay(int[] elements)
         {
+            ClearDisplay();
+
             if (threadDelay == 200)
             {
                 threadDelay = 80;
@@ -98,6 +99,7 @@ namespace SortingAlgorithmVisualisation.Algorithms
             {
                 graphics.FillRectangle(new SolidBrush(Color.Black), i * maxWidth, maxHeight - elements[i], maxWidth, elements[i]);
                 Thread.Sleep(threadDelay);
+               // MessageBox.Show(elements[i].ToString());
             }
         }
     }

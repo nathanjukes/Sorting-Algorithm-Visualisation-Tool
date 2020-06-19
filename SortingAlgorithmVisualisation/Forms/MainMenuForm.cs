@@ -140,6 +140,10 @@ namespace SortingAlgorithmVisualisation
                     algorithm = new TreeSort();
                     algorithm.SetComplexity(2);
                     break;
+                case "Pancake Sort":
+                    algorithm = new PancakeSort();
+                    algorithm.SetComplexity(4);
+                    break;
                 case null:
                     MessageBox.Show("Please select an algorithm","Error");
                     return false;
