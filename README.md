@@ -28,9 +28,9 @@ Or download here:
 [(64-bit)](https://github.com/nathanjukes/Sorting-Algorithm-Visualisation/raw/master/SortingAlgorithmVisualisation/bin/ApplicationDownload.zip) and run the setup.exe
 
 
-![Homescreen Image](https://github.com/nathanjukes/Sorting-Algorithm-Visualisation/blob/master/Assets/DisplayPicture.JPG)
+![Homescreen Image](https://github.com/nathanjukes/Sorting-Algorithm-Visualisation/blob/master/Assets/DisplayPictureCurrent.JPG)
 
-![Demo Gif](https://github.com/nathanjukes/Sorting-Algorithm-Visualisation/blob/master/Assets/DemoRecording.gif)
+![Demo Gif](https://github.com/nathanjukes/Sorting-Algorithm-Visualisation/blob/master/Assets/DemoRecordingCurrent.gif)
 
 ## Change Log
 
