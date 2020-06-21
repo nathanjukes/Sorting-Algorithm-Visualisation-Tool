@@ -99,7 +99,6 @@ namespace SortingAlgorithmVisualisation.Algorithms
             {
                 graphics.FillRectangle(new SolidBrush(Color.Black), i * maxWidth, maxHeight - elements[i], maxWidth, elements[i]);
                 Thread.Sleep(threadDelay);
-               // MessageBox.Show(elements[i].ToString());
             }
         }
     }
