@@ -13,12 +13,14 @@ namespace SortingAlgorithmVisualisation.Algorithms
         public override int elementCount { get; set; }
 
         private int[] elementsCopy;
+
         public override void BeginAlgorithm(int[] elements)
         {
             elementsCopy = (int[])elements.Clone();
 
             StartBogoSort(elements);
         }
+
         private void StartBogoSort(int[] elements)
         {
             Random rnd = new Random();
@@ -73,6 +75,7 @@ namespace SortingAlgorithmVisualisation.Algorithms
                 graphics.FillRectangle(new SolidBrush(Color.FromArgb(83, 153, 182)), i * maxWidth, maxHeight - elementsCopy[i], maxWidth, elementsCopy[i]);
             }
         }
+
         private void ShowIncorrectSort(int[] elements)
         {
             for (int i = 0; i < elementCount; i++)

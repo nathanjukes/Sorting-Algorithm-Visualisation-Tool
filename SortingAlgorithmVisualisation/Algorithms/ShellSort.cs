@@ -10,6 +10,7 @@ namespace SortingAlgorithmVisualisation.Algorithms
     class ShellSort : AlgorithmBase
     {
         public override int elementCount { get; set; }
+
         public override void BeginAlgorithm(int[] elements)
         {
             StartShellSort(elements);

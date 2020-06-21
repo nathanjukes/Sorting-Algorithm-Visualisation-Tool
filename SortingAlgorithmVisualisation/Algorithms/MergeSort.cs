@@ -15,6 +15,7 @@ namespace SortingAlgorithmVisualisation.Algorithms
 
         private int offset;
         private int qCount = 0;
+
         public override void BeginAlgorithm(int[] elements)
         {
             SplitArray(elements);
