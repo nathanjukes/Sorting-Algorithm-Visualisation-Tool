@@ -5,7 +5,7 @@
 <h4 align="center">A Sorting Algorithm Visualiser made in C# Windows Forms.</h4>
 
 <p align="center">
-  <a href="https://scrutinizer-ci.com/g/pH7Software/pH7-Social-Dating-CMS/build-status/master">
+  <a href="https://github.com/nathanjukes/Sorting-Algorithm-Visualisation-Tool">
       <img src="https://scrutinizer-ci.com/g/pH7Software/pH7-Social-Dating-CMS/badges/build.png?b=master">
   </a>
   <a href="https://img.shields.io/badge/version-v1.07-blue">
